@@ -1,0 +1,161 @@
+body{
+    /* font-family: "Carter Sans",sans-serif; */
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.stop-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* #navbar{
+    width: 100%;
+    height: 182px;
+
+    position: fixed;
+    margin: 0;
+    z-index: 10;
+    transition: ease 0.3s;
+
+
+} */
+#productShowPart{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 180px;
+
+}
+#productShowHeader{
+    width: 100%;
+    /* border: 1px solid green; */
+    height: 150px;
+    border-bottom: 1px solid rgb(221, 212, 212);
+
+}
+#pageTracker{
+    width: 100%;
+    height: 50%;
+}
+#categoryTitle{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    line-height: 70px;
+}
+#productSort{
+    width: 100%;
+    /* border: 1px solid yellow; */
+    height: 90px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 212, 212);
+    position: relative;
+    
+}
+#productSortIcon{
+    border-left: 1px solid rgb(209, 203, 203);
+    padding-left: 20px;
+    cursor: pointer;
+}
+#productSortIcon *{
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(168, 163, 163);
+}
+#productSortIcon>span{
+    padding: 8px;
+    margin-right: 35px;
+   
+}
+#sortList{
+    width: 17%;
+    height: 330px;
+    background-color: rgb(241, 235, 235);
+    z-index: 11;
+    position: absolute;
+   bottom: 100px;
+   right: -30%;
+   transition: ease 0.4s;
+}
+#sortList>ul{
+    list-style-type:none;
+    margin-top: 25px;
+}
+#sortList>ul>li{
+    margin-bottom: 45px;
+}
+
+
+
+/*--------------- Product show grid --------------*/
+#productGrid{
+    display: grid;
+    width: 100%;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    grid-column-gap: 4.5%;
+    grid-row-gap: 45px;
+    margin-top: 45px;
+
+}
+/* .productCard{ 
+    border: 1px solid red;
+} */
+.prductImgDiv{
+    width: 100%;
+}
+.prductImgDiv>img{
+    width: 100%;
+}
+.productDetailsDiv{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+}
+.productDetailsDiv>div>span{
+    display: inline-block;
+
+}
+.productNameDiv{
+    font-size: 13px;
+    margin-top: 15px;
+
+}
+
+.productReviewsDiv>span{
+    font-size: 12px;
+    margin-top: 15px;
+}
+.checked{
+    color: #FFD200;
+}
+.productPriceDiv>span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+
+footer{
+    position: relative;
+
+    margin-top: 80px;
+    
+}
+
+
