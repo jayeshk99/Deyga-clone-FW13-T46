@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div id="sp-container">
+        <div id="search-modal-container">
+            <div id="empty"></div>
+            <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                <ol>
+                    <li>
+                        <a href="/" title="Home" style="color: black;">Home</a>
+                    </li>
+                    <li aria-current="page">
+                        <a href="/account/register" aria-current="page">Create Account</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+        <div id="sign-container-div">
+            <div id="form-div">
+                <form action="/account" id="create_customer">
+                    <header class="form-header">
+                        <h1 class="u-h1">Register</h1>
+                        <div class="oxi-social-login"><iframe id="social_login_frame" title="Social Login Frame"
+                                src="https://social-login.oxiapps.com/widget?site=deyga-in.myshopify.com&amp;vt=928391&amp;parenturl=https://deyga.in/account/register"
+                                style="width:100%;max-width:100%;padding-top:0px;margin-bottom:5px;border:0px;height:96px;"
+                                scrolling="no"></iframe></div>
+                        <p class="form-legend">Please fill in the information below:</p>
+                    </header>
+                    <div class="form-imput-div">
+                        <input type="text" id="fname" class="form-input" name="customer[first_name]"
+                            aria-label="First name" placeholder="First name" autofocus="" spellcheck="false"
+                            data-ms-editor="true">
+                        <label class="form-input-lable">First name</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="text" id="lname" class="form-input" name="customer[last_name]"
+                            aria-label="Last name" placeholder="Last name" spellcheck="false" data-ms-editor="true">
+                        <label class="form-input-lable">Last name</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="email" id="email" class="form-input" name="customer[email]" aria-label="Email"
+                            placeholder="Email" required="required">
+                        <label class="form-input-lable">Email</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="password" id="password" class="form-input" name="customer[password]"
+                            aria-label="Password" placeholder="Password" required="required" aria-autocomplete="list">
+                        <label class="form-input-lable">Password</label>
+                    </div>
+
+                    <button type="submit" onclick="moveTologin()" class="sign-btn">Create my account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+</script>
