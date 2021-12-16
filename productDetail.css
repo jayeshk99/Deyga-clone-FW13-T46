@@ -154,7 +154,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(255, 97, 124);
   color: white;
   transform-origin: bottom left;
   transition: transform 0.4s ease-out;
