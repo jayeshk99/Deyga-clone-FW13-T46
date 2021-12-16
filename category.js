@@ -245,7 +245,7 @@ function appendData(data) {
 
 
 
-localStorage.setItem("productData", JSON.stringify(productDetailData));
+// localStorage.setItem("productData", JSON.stringify(productDetailData));
 let productData = JSON.parse(localStorage.getItem("productData"))
 appendData(productData);
 

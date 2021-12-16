@@ -416,3 +416,4 @@ let productData = [
     productQuantity: 1,
   },
 ];
+localStorage.setItem("productData", JSON.stringify(productData));
