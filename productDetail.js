@@ -6,10 +6,10 @@ let productDetailData = {
   ],
 
   productName: "Anti Dandruff Oil",
-  productRating: 3,
+  productRating: 0,
   totalReview: 51,
   price: 451,
-  productSize: 100,
+  productSize: "100ml",
   productQuantity: 1,
 };
 
@@ -84,7 +84,7 @@ let sizeSpan = document.createElement("span");
 sizeSpan.textContent = "Size:";
 let sizeType = document.createElement("span");
 sizeType.setAttribute("id", "sizeType");
-sizeType.textContent = `${productDetailData.productSize}ml`;
+sizeType.textContent = productDetailData.productSize;
 productSizeDiv.append(sizeSpan, sizeType);
 
 productQuantityDiv = document.createElement("div");
