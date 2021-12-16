@@ -124,14 +124,25 @@ freeDilv.textContent = "Get free shipping on prepaid orders above Rs. 1400";
 let btnDiv = document.createElement("div");
 btnDiv.setAttribute("id", "btnDiv");
 let addToCartBtn = document.createElement("button");
-addToCartBtn.setAttribute("id", "addToCartBtn");
-addToCartBtn.setAttribute("class", "hover-underline-animation");
+addToCartBtn.setAttribute("class", "hover-underline-animation addToCartBtn");
 addToCartBtn.textContent = "ADD TO CART";
+
+let viewCartBtn = document.createElement("button");
+viewCartBtn.textContent = "PROCEED TO CART";
+viewCartBtn.style.display = "none";
+addToCartBtn.addEventListener("click", () => {
+  viewCartBtn.style.display = "block";
+  addToCartBtn.style.display = "none";
+});
+viewCartBtn.setAttribute(
+  "class",
+  "viewCarthover-underline-animation addToCartBtn"
+);
 let buyItNowBtn = document.createElement("button");
 buyItNowBtn.setAttribute("id", "buyItNowBtn");
 buyItNowBtn.setAttribute("class", "buyItNowBtnhover-underline-animation");
 buyItNowBtn.textContent = "BUY IT NOW";
-btnDiv.append(addToCartBtn, buyItNowBtn);
+btnDiv.append(addToCartBtn, viewCartBtn, buyItNowBtn);
 
 let naturalImgDiv = document.createElement("div");
 naturalImgDiv.setAttribute("id", "naturalImgDiv");

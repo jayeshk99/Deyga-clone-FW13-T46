@@ -99,7 +99,7 @@ body {
 .paraGreen {
   color: green;
 }
-#addToCartBtn {
+.addToCartBtn {
   padding: 20px 50px;
   width: 80%;
   border: none;
@@ -130,8 +130,37 @@ body {
   transform-origin: bottom left;
   transition: transform 0.4s ease-out;
 }
-
 .hover-underline-animation:hover:after {
+  content: "";
+  transform: scaleX(0);
+  background-color: color;
+  transform-origin: bottom right;
+}
+
+.viewCarthover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.viewCarthover-underline-animation:after {
+  content: "PROCEED TO CART";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+
+.viewCarthover-underline-animation:hover:after {
   content: "";
   transform: scaleX(0);
   background-color: color;
