@@ -1,198 +1,208 @@
 @font-face {
-    font-family: "Cartner Sans W01";
-    src: url("/font/carter-sans-w01.ttf") format("truetype");
-  }
-  
-  body {
-    font-family: "Carter Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #454545;
-    background: #fff;
-    line-height: 1.65;
-  }
-  
-  #productDetailContainer {
-    display: flex;
-    width: 100%;
-    height: 800px;
-    border: 1px solid;
-  }
-  #productImageContainer {
-    width: 40%;
-    height: 90%;
-    padding: 0 6%;
-    border: 1px solid red;
-  }
-  #productDescriptionContainer {
-    width: 50%;
-    height: 90%;
-    border: 1px solid blueviolet;
-  }
-  #productImgMain {
-    width: 100%;
-    height: 80%;
-    bottom: 15%;
-  }
-  #thumbNailDiv {
-    height: 12%;
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-    gap: 2%;
-    justify-content: center;
-  }
-  #thumbImgSpan {
-    height: 90%;
-    padding: 1%;
-    width: 15%;
-    border: none;
-  }
-  
-  #thumbImg {
-    height: 100%;
-    width: 100%;
-  }
-  #productNameDiv {
-    border: 1px solid;
-    margin-bottom: 2%;
-  }
-  #productTitle {
-    font-size: 1.5rem;
-    padding: 0;
-  }
-  .checked {
-    color: #ffd200;
-  }
-  #ratingSpan {
-    border: 1px solid;
-    margin-top: -25px;
-    vertical-align: top;
-    display: flex;
-    gap: 0.5%;
-    font-family: "Carter Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #454545;
-  }
-  #productPrice {
-    font-size: 23px;
-    font-weight: 600;
-    color: #9d9d9d;
-  }
-  #sizeType {
-    border: 1px solid;
-    display: block;
-    width: 10%;
-    padding: 1%;
-    text-align: center;
-    margin-top: -50;
-  }
-  #productQuantityDiv {
-    margin-top: 3%;
-    border: 1px solid;
-  }
-  #quantityDiv {
-    border: 1px solid #e3e3e3;
-    width: 12%;
-    padding: 1%;
-    display: flex;
-    white-space: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-  }
-  .paraGreen {
-    color: green;
-  }
-  #btnDiv {
-    border: 1px solid red;
-  }
-  #addToCartBtn {
-    padding: 20px 50px;
-    width: 80%;
-    border: none;
-    border: 1px solid black;
-    background-color: white;
-    font-weight: 600;
-  }
-  
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .hover-underline-animation:after {
-    content: "ADD TO CART";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    transform-origin: bottom left;
-    transition: transform 0.4s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
-    content: "";
-    transform: scaleX(0);
-    background-color: color;
-    transform-origin: bottom right;
-  }
-  #buyItNowBtn {
-    padding: 20px 50px;
-    width: 80%;
-    border: none;
-    border: 1px solid #e3e3e3;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-  
-  .buyItNowBtnhover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .buyItNowBtnhover-underline-animation:after {
-    content: "BUY IT NOW";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    transform-origin: bottom left;
-    transition: transform 0.4s ease-out;
-  }
-  
-  .buyItNowBtnhover-underline-animation:hover:after {
-    content: "";
-    transform: scaleX(0);
-    background-color: color;
-    transform-origin: bottom right;
-  }
-  #naturalImgDiv {
-    height: 13%;
-    width: 80%;
-    background-color: tomato;
-  }
-  #naturalImg {
-    height: 100%;
-    width: 100%;
-  }
-  
+  font-family: "Cartner Sans W01";
+  src: url("/font/carter-sans-w01.ttf") format("truetype");
+}
+
+body {
+  font-family: "Carter Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #454545;
+  background: #fff;
+  line-height: 1.65;
+}
+
+#productDetailContainer {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+#productImageContainer {
+  width: 40%;
+  height: 90%;
+  padding: 0 6%;
+}
+#productDescriptionContainer {
+  width: 50%;
+  height: 90%;
+}
+#productImgMain {
+  width: 100%;
+  height: 80%;
+  bottom: 15%;
+}
+#thumbNailDiv {
+  height: 12%;
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+}
+#thumbImgSpan {
+  height: 90%;
+  padding: 1%;
+  width: 15%;
+  border: none;
+}
+
+#thumbImg {
+  height: 100%;
+  width: 100%;
+}
+#productNameDiv {
+  margin-bottom: 2%;
+}
+#productTitle {
+  font-size: 1.5rem;
+  padding: 0;
+}
+.checked {
+  color: #ffd200;
+}
+#ratingSpan {
+  margin-top: -25px;
+  vertical-align: top;
+  display: flex;
+  gap: 0.5%;
+  font-family: "Carter Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #454545;
+}
+#productPrice {
+  font-size: 23px;
+  font-weight: 600;
+  color: #9d9d9d;
+}
+#sizeType {
+  border: 1px solid;
+  display: block;
+  width: 10%;
+  padding: 1%;
+  text-align: center;
+  margin-top: -50;
+}
+#productQuantityDiv {
+  margin-top: 3%;
+}
+#quantityDiv {
+  border: 1px solid #e3e3e3;
+  width: 12%;
+  padding: 1%;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.paraGreen {
+  color: green;
+}
+#addToCartBtn {
+  padding: 20px 50px;
+  width: 80%;
+  border: none;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: 600;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "ADD TO CART";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  content: "";
+  transform: scaleX(0);
+  background-color: color;
+  transform-origin: bottom right;
+}
+#buyItNowBtn {
+  padding: 20px 50px;
+  width: 80%;
+  border: none;
+  border: 1px solid #e3e3e3;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.buyItNowBtnhover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.buyItNowBtnhover-underline-animation:after {
+  content: "BUY IT NOW";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+
+.buyItNowBtnhover-underline-animation:hover:after {
+  content: "";
+  transform: scaleX(0);
+  background-color: color;
+  transform-origin: bottom right;
+}
+#naturalImgDiv {
+  height: 13%;
+  width: 80%;
+  background-color: tomato;
+}
+#naturalImg {
+  height: 100%;
+  width: 100%;
+}
+#howToUseDiv {
+  display: flex;
+  margin-top: 2%;
+  padding: 1%;
+  gap: 2%;
+  width: 80%;
+  height: 6%;
+}
+.descBtn {
+  border: none;
+  padding: 2%;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: white;
+}
+#showDesc {
+  border: 1px solid #e3e3e3;
+  width: 75%;
+}

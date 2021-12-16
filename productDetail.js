@@ -140,11 +140,44 @@ naturalImg.setAttribute("id", "naturalImg");
 naturalImg.src =
   "https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Untitled_design_1_ffb99d9a-dabf-45a3-b489-fcca97415010.png?v=1595966482";
 naturalImgDiv.append(naturalImg);
+
+let howToUseDiv = document.createElement("div");
+howToUseDiv.setAttribute("id", "howToUseDiv");
+let productDesBtn = ["Description", "How to Use"];
+let productDesBtnData = [
+  "The Charcoal Soap Bar is perfect for times when you'd want to take a thoroughly cleansing shower at the end of a messy, grimy day. Also, using our Charcoal soap bar consistently on your face can reduce or eliminate acne, bumps and blackheads. So if you suffer from any of these, we’d recommend you use this as a part of your daily regimen.",
+];
+productDesBtn.forEach((el, i) => {
+  let descBtn = document.createElement("button");
+  descBtn.setAttribute("class", "descBtn");
+
+  descBtn.textContent = el;
+  descBtn.addEventListener("click", () => {
+    descBtn.style.backgroundColor = "black";
+    descBtn.style.color = "white";
+    showDescDetail(i);
+  });
+
+  howToUseDiv.append(descBtn);
+});
+let showDesc = document.createElement("div");
+showDesc.setAttribute("id", "showDesc");
+
+let showDescDetail = (i) => {
+  if (i === 0) {
+    showDesc.textContent = productDesBtnData[i];
+  } else {
+    showDesc.innerHTML = `<img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/HERBAL_HAIR_PACK-01_480x480.jpg?v=1577109782"></img>`;
+  }
+};
+
 productDescriptionContainer.append(
   productNameDiv,
   productSizeDiv,
   productQuantityDiv,
   freeDilv,
   btnDiv,
-  naturalImgDiv
+  naturalImgDiv,
+  howToUseDiv,
+  showDesc
 );
