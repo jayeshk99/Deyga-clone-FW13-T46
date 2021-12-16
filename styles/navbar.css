@@ -11,8 +11,14 @@
     }
     header {
       /* background-color: red; */
-    border-bottom: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(202, 127, 127);
     height: 182px;
+
+    position: fixed;
+    margin: 0;
+    z-index: 10;
+    transition: ease 0.3s;
+    background-color: white;
     }
     header ul{
     list-style: none;
@@ -166,5 +172,4 @@
 .hover-underline-animation1:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
 }
