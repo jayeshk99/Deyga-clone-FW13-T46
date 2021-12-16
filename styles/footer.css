@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Cartner Sans W01';
+    src: url('/font/carter-sans-w01.ttf') format('truetype')
+    }
+    body{
+    font-family: "Cartner Sans W01" ;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px;
+    color: #28282b;
+    }
+    .footer-wrapper{
+        margin: auto;
+        max-width: 1500px;
+        text-align: center;
+        }
+
+        .footer-wrapper h3 {
+            color: #9d9d9d;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .footer-wrapper h4 {
+            font-weight: 700;
+        }
+
+        .footer-wrapper li {
+            color: #9d9d9d;
+            padding-bottom: 20px;
+            font-size: 13px;
+        }
+
+        .socialicons {
+            width: 400px;
+            margin: auto;
+            padding-bottom: 5px;
+        }
+
+        .socialicons h3 {
+            color: #9d9d9d;
+        }
+
+        .socialicons ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .socialicons img {
+            width: 60%;
+        }
+
+        .footer-row {
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+
+        .footer-row ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .footer-row .col {
+            width: 28%;
+        }
+
+        .footer-row p {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        #Subscribe {
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-family: 'Cartner Sans W01';
+            padding: 10px;
+            width: 80%;
+        }
+
+        #subscribe {
+            padding: 10px 50px;
+            border: none;
+            border: 1px solid black;
+            font-weight: 600;
+            width: 88%;
+            margin-top: 10px;
+            font-family: "Cartner Sans W01";
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation:after {
+            content: 'SUBSCRIBE';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            transform: scaleX(1);
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            transform-origin: bottom left;
+            transition: transform 0.4s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            content: '';
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
