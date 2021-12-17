@@ -10,12 +10,23 @@ body {
   color: #454545;
   background: #fff;
   line-height: 1.65;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.stop-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 #productDetailContainer {
   display: flex;
   width: 100%;
   height: 800px;
+  position: relative;
+  top: 180px;
 }
 #productImageContainer {
   width: 40%;
@@ -108,12 +119,12 @@ body {
   font-weight: 600;
 }
 
-.hover-underline-animation {
+.addToCart-hover-underline-animation {
   display: inline-block;
   position: relative;
 }
 
-.hover-underline-animation:after {
+.addToCart-hover-underline-animation:after {
   content: "ADD TO CART";
   display: flex;
   justify-content: center;
@@ -130,7 +141,7 @@ body {
   transform-origin: bottom left;
   transition: transform 0.4s ease-out;
 }
-.hover-underline-animation:hover:after {
+.addToCart-hover-underline-animation:hover:after {
   content: "";
   transform: scaleX(0);
   background-color: color;
