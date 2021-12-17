@@ -1,11 +1,10 @@
-
-let productDetailData = JSON.parse(localStorage.getItem("clickedProduct"))
+let productDetailData = JSON.parse(localStorage.getItem("clickedProduct"));
 let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 // ----------Import functions-------
 import { navbar, footer } from "/components/navbar.js";
-import { cartComp } from "/components/cart.js"
-import { appendCart } from "/scripts/cart.js"
+import { cartComp } from "/components/cart.js";
+import { appendCart } from "/scripts/cart.js";
 
 let headerPart = document.getElementById("navbar");
 headerPart.innerHTML = navbar();
@@ -15,10 +14,14 @@ cartPart.innerHTML = cartComp();
 
 let footerPart = document.querySelector("footer");
 footerPart.innerHTML = footer();
-
-
-
-
+// -------------------path of page-----------------------------
+let path = document.getElementById("path");
+let pathDiv = document.createElement("div");
+pathDiv.setAttribute("id", "pathDiv");
+pathDiv.innerHTML = `<a href="index.html" class="linkPath">Home ></a>
+<a href="category.html" class="linkPath"> Skin Care ></a>
+<a href="" class="linkPath">${productDetailData.productName}</a>`;
+path.append(pathDiv);
 // -----------nav hiding & showing on scroll ----------------
 
 var prevScrollpos = window.pageYOffset;
@@ -30,24 +33,18 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "-180px";
   }
   prevScrollpos = currentScrollPos;
-}
-
+};
 
 // ----------- disabling and enabling body scroll ----------
 
 function disableBodyScroll() {
   const element = document.querySelector("body");
   element.classList.add("stop-scroll");
-
-
 }
 function enableBodyScroll() {
   const element = document.querySelector("body");
   element.classList.remove("stop-scroll");
 }
-
-
-
 
 // -------------for cart---------------------
 let cartBtn = document.querySelector("#submenu>ul>li:nth-child(2)");
@@ -56,16 +53,13 @@ cartBtn.addEventListener("click", () => {
   appendCart();
   document.getElementById("cart").style.marginLeft = "0%";
   disableBodyScroll();
-
-
-})
+});
 
 let cartCloseBtn = document.querySelector(".cartClose");
 cartCloseBtn.addEventListener("click", () => {
-  document.getElementById("cart").style.marginLeft = "100%"
-  enableBodyScroll()
-})
-
+  document.getElementById("cart").style.marginLeft = "100%";
+  enableBodyScroll();
+});
 
 let productImageContainer = document.getElementById("productImageContainer");
 let productDescriptionContainer = document.getElementById(
@@ -96,6 +90,7 @@ productDetailData.productImgUrl2.forEach((element) => {
   thumbNailDiv.append(thumbImgSpan);
 });
 productImageContainer.append(productImgMain, thumbNailDiv);
+
 // right side par showing product discription
 let productNameDiv = document.createElement("div");
 productNameDiv.setAttribute("id", "productNameDiv");
@@ -122,6 +117,7 @@ totalReview.textContent = `${productDetailData.totalReview}review`;
 ratingSpan.append(totalReview);
 
 let productPriceDiv = document.createElement("div");
+productPriceDiv.setAttribute("id", "productPriceDiv");
 let productPrice = document.createElement("span");
 productPrice.textContent = `Rs. ${productDetailData.price}`;
 productPrice.setAttribute("id", "productPrice");
@@ -177,7 +173,10 @@ freeDilv.textContent = "Get free shipping on prepaid orders above Rs. 1400";
 let btnDiv = document.createElement("div");
 btnDiv.setAttribute("id", "btnDiv");
 let addToCartBtn = document.createElement("button");
-addToCartBtn.setAttribute("class", "addToCart-hover-underline-animation addToCartBtn");
+addToCartBtn.setAttribute(
+  "class",
+  "addToCart-hover-underline-animation addToCartBtn"
+);
 addToCartBtn.textContent = "ADD TO CART";
 
 let viewCartBtn = document.createElement("button");
@@ -196,7 +195,7 @@ viewCartBtn.addEventListener("click", () => {
   appendCart();
   document.getElementById("cart").style.marginLeft = "0%";
   disableBodyScroll();
-})
+});
 viewCartBtn.setAttribute(
   "class",
   "viewCarthover-underline-animation addToCartBtn"
@@ -241,7 +240,7 @@ let showDescDetail = (i) => {
   if (i === 0) {
     showDesc.textContent = productDesBtnData[i];
   } else {
-    showDesc.innerHTML = `<img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/HERBAL_HAIR_PACK-01_480x480.jpg?v=1577109782"></img>`;
+    showDesc.innerHTML = `<img id="showDescImg"src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/HERBAL_HAIR_PACK-01_480x480.jpg?v=1577109782"></img>`;
   }
 };
 
