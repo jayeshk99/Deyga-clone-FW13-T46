@@ -416,3 +416,7 @@ let productData = [
     productQuantity: 1,
   },
 ];
+function setDataToLocal() {
+  localStorage.setItem("productData", JSON.stringify(productData));
+}
+export { setDataToLocal };
