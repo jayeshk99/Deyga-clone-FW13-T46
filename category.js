@@ -1,105 +1,11 @@
 
-let productDetailData =
-    [
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
 
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-        {
-            productImgUrl2: [
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-                "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-            ],
-            productName: "Anti Dandruff Oil",
-            productRating: 3,
-            totalReview: 51,
-            price: 451,
-            productSize: 100,
-            productQuantity: 1,
-        },
-    ];
-localStorage.setItem("cartData", JSON.stringify(productDetailData));
 
 // ------------Importing functions----------------
 import { navbar, footer } from "/components/navbar.js";
 import { appendCart } from "/scripts/cart.js";
-import { cartComp } from "/components/cart.js"
+import { cartComp } from "/components/cart.js";
+import { setDataToLocal } from "/scripts/data.js";
 
 let navComp = navbar();
 let footerComp = footer();
@@ -113,6 +19,7 @@ cartPart.innerHTML = cartComp();
 let footerPart = document.querySelector("footer");
 footerPart.innerHTML = footerComp;
 
+setDataToLocal();
 
 // ----------- disabling and enabling body scroll ----------
 
@@ -190,7 +97,7 @@ function appendData(data) {
         productCard.addEventListener("click", (event) => {
             event.preventDefault();
             localStorage.setItem("clickedProduct", JSON.stringify(el));
-            window.location.href = "productPage.html";
+            window.location.href = "productDetail.html";
         })
 
 
@@ -245,8 +152,7 @@ function appendData(data) {
 
 
 
-// localStorage.setItem("productData", JSON.stringify(productDetailData));
-let productData = JSON.parse(localStorage.getItem("productData"))
+let productData = JSON.parse(localStorage.getItem("productData"));
 appendData(productData);
 
 

@@ -1,19 +1,72 @@
-let productDetailData = {
-  productImgUrl2: [
-    "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
-    "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02009_800x.jpg?v=1623388869",
-    "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/PG_800x.jpg?v=1623388869",
-  ],
 
-  productName: "Anti Dandruff Oil",
-  productRating: 0,
-  totalReview: 51,
-  price: 451,
-  productSize: "100ml",
-  productQuantity: 1,
-};
+let productDetailData = JSON.parse(localStorage.getItem("clickedProduct"))
+let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
-let productDetailContainer = document.getElementById("productDetailContainer");
+// ----------Import functions-------
+import { navbar, footer } from "/components/navbar.js";
+import { cartComp } from "/components/cart.js"
+import { appendCart } from "/scripts/cart.js"
+
+let headerPart = document.getElementById("navbar");
+headerPart.innerHTML = navbar();
+
+let cartPart = document.getElementById("cart");
+cartPart.innerHTML = cartComp();
+
+let footerPart = document.querySelector("footer");
+footerPart.innerHTML = footer();
+
+
+
+
+// -----------nav hiding & showing on scroll ----------------
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-180px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+// ----------- disabling and enabling body scroll ----------
+
+function disableBodyScroll() {
+  const element = document.querySelector("body");
+  element.classList.add("stop-scroll");
+
+
+}
+function enableBodyScroll() {
+  const element = document.querySelector("body");
+  element.classList.remove("stop-scroll");
+}
+
+
+
+
+// -------------for cart---------------------
+let cartBtn = document.querySelector("#submenu>ul>li:nth-child(2)");
+cartBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  appendCart();
+  document.getElementById("cart").style.marginLeft = "0%";
+  disableBodyScroll();
+
+
+})
+
+let cartCloseBtn = document.querySelector(".cartClose");
+cartCloseBtn.addEventListener("click", () => {
+  document.getElementById("cart").style.marginLeft = "100%"
+  enableBodyScroll()
+})
+
+
 let productImageContainer = document.getElementById("productImageContainer");
 let productDescriptionContainer = document.getElementById(
   "productDescriptionContainer"
@@ -87,7 +140,7 @@ sizeType.setAttribute("id", "sizeType");
 sizeType.textContent = productDetailData.productSize;
 productSizeDiv.append(sizeSpan, sizeType);
 
-productQuantityDiv = document.createElement("div");
+let productQuantityDiv = document.createElement("div");
 productQuantityDiv.setAttribute("id", "productQuantityDiv");
 let quantitySpan = document.createElement("span");
 quantitySpan.textContent = "Quantity:";
@@ -124,16 +177,26 @@ freeDilv.textContent = "Get free shipping on prepaid orders above Rs. 1400";
 let btnDiv = document.createElement("div");
 btnDiv.setAttribute("id", "btnDiv");
 let addToCartBtn = document.createElement("button");
-addToCartBtn.setAttribute("class", "hover-underline-animation addToCartBtn");
+addToCartBtn.setAttribute("class", "addToCart-hover-underline-animation addToCartBtn");
 addToCartBtn.textContent = "ADD TO CART";
 
 let viewCartBtn = document.createElement("button");
 viewCartBtn.textContent = "PROCEED TO CART";
 viewCartBtn.style.display = "none";
+
 addToCartBtn.addEventListener("click", () => {
   viewCartBtn.style.display = "block";
   addToCartBtn.style.display = "none";
+  cartData.push(productDetailData);
+  localStorage.setItem("cartData", JSON.stringify(cartData));
 });
+
+viewCartBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  appendCart();
+  document.getElementById("cart").style.marginLeft = "0%";
+  disableBodyScroll();
+})
 viewCartBtn.setAttribute(
   "class",
   "viewCarthover-underline-animation addToCartBtn"

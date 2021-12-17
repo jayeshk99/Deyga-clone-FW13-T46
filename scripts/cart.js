@@ -9,6 +9,8 @@ function appendCart() {
         document.getElementById("showCartBottom").style.display = "none";
 
     } else {
+        let showCartProduct = document.getElementById("showCartProduct");
+        showCartProduct.innerHTML = "";
 
         cartData.forEach((el) => {
 
@@ -41,9 +43,10 @@ function appendCart() {
             reduceQty.setAttribute("class", "material-icons");
             reduceQty.innerText = "remove";
             reduceQty.addEventListener("click", () => {
-                if (el.productQuantity < 1) {
+                if (el.productQuantity > 1) {
                     el.productQuantity -= 1;
                     qtyShowSpan.innerText = el.productQuantity;
+                    console.log(cartData)
                 }
             });
             let increaseQty = document.createElement("span");
@@ -52,6 +55,7 @@ function appendCart() {
             increaseQty.addEventListener("click", () => {
                 el.productQuantity += 1;
                 qtyShowSpan.innerText = el.productQuantity;
+
             });
             qtySpan.append(reduceQty, qtyShowSpan, increaseQty)
 
