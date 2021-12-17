@@ -156,6 +156,103 @@ let productData = JSON.parse(localStorage.getItem("productData"));
 appendData(productData);
 
 
+
+// ------Sort Function --------
+
+let lowSort = () => {
+    let lowSortArr = productData.sort((a, b) => {
+        return a.price - b.price;
+    })
+    let gridDiv = document.getElementById("productGrid");
+    gridDiv.innerHTML = "";
+    appendData(lowSortArr);
+    document.getElementById("sortList").style.right = "-30%"
+    x -= 1;
+    enableBodyScroll();
+}
+let highSort = () => {
+    let highSortArr = productData.sort((a, b) => {
+        return b.price - a.price;
+    })
+    let gridDiv = document.getElementById("productGrid");
+    gridDiv.innerHTML = "";
+    appendData(highSortArr);
+    document.getElementById("sortList").style.right = "-30%"
+    x -= 1;
+    enableBodyScroll();
+}
+
+
+
+function order(str1, str2) {
+    let n1 = str1.length;
+    let n2 = str2.length;
+    let min;
+    if (n1 < n2) {
+        min = n1;
+    } else {
+        min = n2;
+    }
+    for (var i = 0; i < min; i++) {
+        if (str1.charCodeAt(i) !== str2.charCodeAt(i)) {
+            if (str1.charCodeAt(i) > str2.charCodeAt(i)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    if (n1 > n2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function aTozSort() {
+    let N = productData.length;
+    for (var i = 0; i < N - 1; i++) {
+        for (var j = 0; j < N - i - 1; j++) {
+
+            if (order(productData[j].productName, productData[j + 1].productName)) {
+
+                let temp = productData[j];
+                productData[j] = productData[j + 1];
+                productData[j + 1] = temp;
+            }
+        }
+    }
+    let gridDiv = document.getElementById("productGrid");
+    gridDiv.innerHTML = "";
+    appendData(productData);
+    document.getElementById("sortList").style.right = "-30%"
+    x -= 1;
+    enableBodyScroll();
+}
+function zToaSort() {
+    let N = productData.length;
+    for (var i = 0; i < N - 1; i++) {
+        for (var j = 0; j < N - i - 1; j++) {
+
+            if (!order(productData[j].productName, productData[j + 1].productName)) {
+
+                let temp = productData[j];
+                productData[j] = productData[j + 1];
+                productData[j + 1] = temp;
+            }
+        }
+    }
+    let gridDiv = document.getElementById("productGrid");
+    gridDiv.innerHTML = "";
+    appendData(productData);
+    document.getElementById("sortList").style.right = "-30%"
+    x -= 1;
+    enableBodyScroll();
+}
+
+document.querySelector("#sortList>ul>li:nth-child(1)").addEventListener("click", aTozSort);
+document.querySelector("#sortList>ul>li:nth-child(2)").addEventListener("click", zToaSort);
+document.querySelector("#sortList>ul>li:nth-child(3)").addEventListener("click", lowSort);
+document.querySelector("#sortList>ul>li:nth-child(4)").addEventListener("click", highSort);
 // appending rating stars
 
 // let ratingSpan = document.createElement("span");
