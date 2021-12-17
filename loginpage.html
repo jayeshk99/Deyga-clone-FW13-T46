@@ -51,7 +51,7 @@
                         <button type="button" onclick="recoverPassword()" class="form-input-ac-link ac-link" data-action="toggle-recover-form">Forgot
                             password?</button>
                     </div>
-                    <button type="submit" class="login-btn">Login</button>
+                    <button type="submit"  class="login-btn">Login</button>
                     <div class="Form__Hint Form__Hint--center">
                         <span class="Text--subdued">Don't have an account?</span>
                         <a href="signup.html" class="ac-link ac-link--secondary">Create one</a>
@@ -68,5 +68,35 @@
     
     const recoverPassword = () => {
         window.location.href = "recover.html";
+    }
+    document.querySelector(".login-btn").addEventListener('click', login);
+    var regdUsers = JSON.parse(localStorage.getItem("userData"));
+    console.log(regdUsers)
+
+    function login(e) {
+        e.preventDefault()
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+
+        if (email == "papa@123" && pass == "neeraj") {
+            window.location.href = "admin.html"
+            alert("login successful");
+        } else {
+            for (var i = 0; i < regdUsers.length; i++) {
+                if (
+                    regdUsers[i].email == email &&
+                    regdUsers[i].passWord == pass
+                ) {
+                   
+                    alert("login successful"); 
+                    window.location.href = "home.html";
+                    break;   
+                } else {
+                    alert("Wrong email or password")
+                    break;
+                }
+            }
+        }
+
     }
 </script>

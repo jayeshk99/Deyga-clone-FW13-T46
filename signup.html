@@ -61,7 +61,7 @@
                         <label class="form-input-lable">Password</label>
                     </div>
 
-                    <button type="submit" onclick="moveTologin()" class="sign-btn">Create my account</button>
+                    <button type="submit"  class="sign-btn">Create my account</button>
                 </form>
             </div>
         </div>
@@ -70,6 +70,25 @@
 </body>
 
 </html>
-<script>
+<script type="module">
+    document.querySelector(".sign-btn").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+    function signUp(e) {
+        e.preventDefault()
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+        var user = document.getElementById("fname").value+document.getElementById("lname").value;
+        
 
+        var userCredentials = {
+            email: email,
+            passWord: pass,
+            userName: user,
+            
+        };
+        userArr.push(userCredentials);
+        localStorage.setItem("userData", JSON.stringify(userArr));
+
+        window.location.href = "loginpage.html";
+    }
 </script>
