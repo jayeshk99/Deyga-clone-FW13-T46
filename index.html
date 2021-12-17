@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a52cae5fae.js" crossorigin="anonymous"></script>
     <style>
 .prductImgDiv{
@@ -200,12 +201,223 @@ padding: 10px;
 background-color: #f2f2f2;
 transform: rotateY(180deg);
 }
+/* slider css */
+#slider{
+padding: 100px 0px;
+
+}
+.sliderImg{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 0px 20px;
+}
+#main {
+width: 95%;
+position: relative;
+overflow: hidden;
+margin: auto;
+}
+#sliderjk {
+width: 100%;
+height: 100%;
+list-style: none;
+left: 0;
+margin: 0;
+padding: 0;
+position: relative;
+transition: all 0.75s ease;
+display: flex;
+}
+.slideBox {
+height: 100%;
+float: left;
+}
+.slideBox img{
+width: 230px;
+}
+
+#sliderjk > a {
+margin: 0px 22px;
+}
+#slideBox > a:nth-child(1) {
+margin-left: 0px;
+}
+#slider .btn {
+top: 40%;
+text-decoration: none;
+padding-left: 5px;
+background: none;
+border: none;
+cursor: pointer;
+color: black;
+z-index: 99;
+}
+#main .material-icons {
+font-size: 30px;
+}
+#nextjk {
+right: 0;
+}
+#prevjk:hover,
+#nextjK:hover {
+color: rgb(192, 192, 192);
+}
+
+/*
+main slider csssss */
+#mainSlider{
+max-width: 100%;
+margin-top: -182px;
+z-index: 2;
+background-color: #fdf9f0;
+}
+#mainSlider img,video{
+width: 100%;
+}
+video {
+right: 0;
+top: 0;
+min-width: 100%;
+min-height: 100%;
+}
+/* Slideshow container */
+.slideshow-container {
+max-width:100%;
+position: relative;
+margin: auto;
+}
+#dots{
+position:absolute;
+right:0;
+margin-top:-70px;
+z-index:99;
+margin-right: 30px;
+}
+/* img{
+width:90%;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 10px;
+width: 9px;
+margin: 0 5px;
+background-color: transparent;
+border: 1px solid white;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: white;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframesfade{
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @mediaonlyscreenand(max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
     </style>
 </head>
 
 <body>
     <header></header>
     <main>
+        <section id="mainSlider">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <video autoplay muted loop controls>
+                        <source src="Hair_Range_Gen_Desk.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+
+                <div class="mySlides fade">
+                    <video autoplay muted loop controls>
+                        <source src="XMAS_SALE-Web_1560-1050.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+
+                <div class="mySlides fade">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Face-Care-1560x1050_1800x.jpg?v=1629807878">
+                </div>
+
+                <div class="mySlides fade">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Lip_Combo_1-01_1800x.jpg?v=1616235188">
+                </div>
+
+                <div class="mySlides fade">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Face-Care-1560x1050_1800x.jpg?v=1629807878">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Anti-Dandruff-Oil-1560x1050_1800x.jpg?v=1629899666"
+                        style="width:100%">
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center" id="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
         <section id="deals">
             <div class="grab-deals">
                 <div class="headings">
@@ -659,6 +871,72 @@ transform: rotateY(180deg);
               </div>
           </section>
 
+<section id="slider">
+    <div class="headings">
+        <h1>Superstars Who Skincared</h1>
+    </div>
+    <div class="sliderImg">
+        <button class="btn" href="#" id="prevjk">
+            <i class="material-icons">arrow_back_ios</i>
+        </button>
+        <div id="main">
+            <div id="sliderjk">
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-01_b068a86d-a015-459f-b115-b8199b331a31.jpg?v=1630645213"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-02_80fb14c1-7ddd-4113-82ae-3d65e2a5bfdc.jpg?v=1630645230"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-09_dde80092-5b3c-4021-a83c-27e52cbe6663.jpg?v=1630645247"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-03_99b7133e-c479-4de1-afa1-5c5958fe9222.jpg?v=1630645266"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-04_72f9fe45-c1f5-4442-9ca5-7b239816969a.jpg?v=1630645285"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-11_b408b4b3-5f52-4345-b14b-791c051018a2.jpg?v=1630645307"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-15_cdfe28dc-63b7-483c-9488-9a67109e1ceb.jpg?v=1630645343"
+                            alt="" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="slideBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-13_fa2a1f6e-4f10-4c98-a7be-2e3a9e61161e.jpg?v=1630645382"
+                            alt="" />
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <button class="btn" href="#" id="nextjk">
+            <i class="material-icons">arrow_forward_ios</i>
+        </button>
+    </div>
+</section>
           </main>
           <footer></footer>
 </body>
@@ -670,4 +948,72 @@ transform: rotateY(180deg);
     let footerhtml = document.querySelector("footer");
     header.innerHTML = navbar();
     footerhtml.innerHTML = footer();
+</script>
+<script>
+    function responsiveJkSlider() {
+        var slideList = document.querySelector("#sliderjk");
+
+        var count = 1;
+
+        function prevJkSlide() {
+            if (count > 1) {
+                count = count - 2;
+                slideList.style.left = "-" + count * 280 + "px";
+
+                document.getElementById("nextjk").style.opacity = 1;
+
+                count++;
+            } else {
+                document.getElementById("prevjk").style.opacity = 0.5;
+            }
+        }
+
+        function nextJkSlide() {
+            if (count <= 3) {
+                slideList.style.left = "-" + count * 280 + "px";
+
+                document.getElementById("prevjk").style.opacity = 1;
+                count++;
+            } else {
+                document.getElementById("nextjk").style.opacity = 0.5;
+            }
+        }
+        document.getElementById("prevjk").addEventListener("click", prevJkSlide);
+        document.getElementById("nextjk").addEventListener("click", nextJkSlide);
+    }
+
+    responsiveJkSlider()
+
+
+    // main slider js code
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
 </script>

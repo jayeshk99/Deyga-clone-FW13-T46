@@ -27,7 +27,7 @@ let navbar = ()=>{
         <div class="account">
             <div class="searchBox">
                 <p><input type="text" id="search" placeholder="SEARCH PRODUCTS"><button id="searchBtn"><i
-                            class="fa fa-search" style="font-size:15px;color: rgb(84, 84, 84);"></i>
+                            class="fa fa-search" style="font-size:15px;"></i>
                     </button></p>
             </div>
             <div id="submenu">
