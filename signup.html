@@ -97,7 +97,7 @@
         userArr.push(userCredentials);
         localStorage.setItem("userData", JSON.stringify(userArr));
 
-        window.location.href = "index.html";
+        window.location.href = "loginpage.html";
     }
 </script>
 <script type="module">
@@ -108,9 +108,30 @@
     footerhtml.innerHTML = footer();
 
     // updating cart items value in navbar
-    let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length;
+    let cartitemsNo = JSON.parse(localStorage.getItem("cartData")) || 0;
     console.log(cartitemsNo);
     let cartLengthShow = document.querySelector(".dropdown+li>p>b");
     console.log(cartLengthShow)
-    cartLengthShow.innerText = `Cart (${cartitemsNo})`;
+    cartLengthShow.innerText = `Cart (${ cartitemsNo == 0 ? 0: cartitemsNo.length })`;
+
+    let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
+console.log(currUser )
+if(currUser != 0){
+  document.getElementById("User").textContent = currUser["username"];
+  document.getElementById("logoutUser").style.display = "none";
+  document.getElementById("loginUser").style.display = "block";
+}else{
+  document.getElementById("User").textContent = "Account";
+  document.getElementById("logoutUser").style.display = "block";
+  document.getElementById("loginUser").style.display = "none";
+}
+
+document.getElementById("logout").addEventListener("click",function(){
+    currUser = 0;
+    document.getElementById("User").textContent = "Account";
+    document.getElementById("logoutUser").style.display = "block";
+    document.getElementById("loginUser").style.display = "none";
+    localStorage.setItem("loginUser",JSON.stringify(currUser));
+    window.location.href = "loginpage.html";
+})
 </script>

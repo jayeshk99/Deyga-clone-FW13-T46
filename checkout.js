@@ -1,4 +1,6 @@
 let data = JSON.parse(localStorage.getItem("cartData"));
+
+let paymentDetail = JSON.parse(localStorage.getItem("paymentDetail"));
 let couponFlag = false;
 console.log(data)
 function appendCheckout(data) {
@@ -29,7 +31,9 @@ function appendCheckout(data) {
     let priceShow1 = document.querySelector(".checkoutTextDirecton>p:nth-child(1)");
     priceShow1.textContent = `₹ ${totalPrice}`;
     let priceShow2 = document.querySelector("#checkoutTotalAmount>div>span");
-    priceShow2.textContent = `₹ ${totalPrice}`;
+    priceShow2.textContent = `₹ ${totalPrice+paymentDetail.shippingCharges}`;
+    
+    document.querySelector(".checkoutTextDirecton>p:nth-child(2)").textContent = "₹ "+ paymentDetail.shippingCharges
     console.log(totalPrice);
 }
 appendCheckout(data);
@@ -41,19 +45,24 @@ couponBtn.addEventListener("click", () => {
         if (couponFlag) {
             alert("Coupon Already Applied")
         } else {
-
-            let paymentDetail = JSON.parse(localStorage.getItem("paymentDetail"));
+           
             console.log(paymentDetail)
-            paymentDetail.discount = paymentDetail.subTotal * 0.3;
-            paymentDetail.grandTotal -= paymentDetail.discount;
+            let discountValue = paymentDetail.subTotal * 0.3;
+            console.log(discountValue )
+            let grandTotal = paymentDetail.subTotal + paymentDetail.shippingCharges - paymentDetail.discount;
             let priceShow2 = document.querySelector("#checkoutTotalAmount>div>span");
-            priceShow2.textContent = `₹ ${paymentDetail.grandTotal}`;
+            priceShow2.textContent = `₹ ${grandTotal}`;
             localStorage.setItem("paymentDetail", JSON.stringify(paymentDetail));
             document.querySelector(".checkoutTextDirecton>p:nth-child(3)").textContent = `₹ ${paymentDetail.discount}`;
             document.querySelector(".checkoutTextDirecton>p:nth-child(3)").style.color = "green";
             document.querySelector(".checkoutSubtoal>div>p:nth-child(3)").style.color = "green";
             alert("30% off applied");
             couponFlag = true;
+
+
+            paymentDetail.discount = discountValue;
+            paymentDetail.grandTotal = grandTotal;
+            
             localStorage.setItem("couponFlag", JSON.stringify(couponFlag))
         }
     } else {

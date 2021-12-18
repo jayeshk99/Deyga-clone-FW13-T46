@@ -24,8 +24,8 @@ let navbar = () => {
     </div>
     <div class="header-center-div">
         <div class="logo">
-            <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Deyga_-_Registered_Logo-01_140x.png?v=1600239326"
-                alt="">
+           <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Deyga_-_Registered_Logo-01_140x.png?v=1600239326"
+           alt=""></a> 
         </div>
     </div>
     <div class="header-right-div">
@@ -44,12 +44,14 @@ let navbar = () => {
                     </button></p>
             </div>
             <div id="submenu">
-
                 <ul>
                     <li class="dropdown">
-                        <p><b>Account</b></p>
+                        <p id="User"><b>Account</b></p>
                         <div class="dropdown-content-account" id="dropdown-content-account">
-                                <ul>
+                                <ul id="loginUser">
+                                    <li><a id="logout">Logout</a></li>
+                                </ul>
+                                <ul id="logoutUser">
                                     <li><a href="loginpage.html">Login</a></li>
                                     <li>Track Order</li>
                                     <li><a href="signup.html">Signup</a> </li>
