@@ -151,8 +151,8 @@ function appendData(data) {
 }
 
 
-
-let productData = JSON.parse(localStorage.getItem("productData"));
+let clickedCategory = JSON.parse(localStorage.getItem("clickedCategory"));
+let productData = JSON.parse(localStorage.getItem(`${clickedCategory}`));
 appendData(productData);
 
 
