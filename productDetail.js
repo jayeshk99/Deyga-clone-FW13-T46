@@ -259,5 +259,5 @@ productDescriptionContainer.append(
 let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length;
 console.log(cartitemsNo);
 let cartLengthShow = document.querySelector(".dropdown+li>p>b");
-console.log(cartLengthShow)
+console.log(cartLengthShow);
 cartLengthShow.innerText = `Cart (${cartitemsNo})`;
