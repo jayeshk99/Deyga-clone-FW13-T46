@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div id="sp-container">
+        <div id="search-modal-container">
+            <div id="empty"></div>
+            <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                <ol>
+                    <li>
+                        <a href="/" title="Home" style="color: black;">Home</a>
+                    </li>
+                    <li aria-current="page">
+                        <a href="loginpage.html" aria-current="page">Account</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+        <div id="sign-container-div">
+            <div id="form-div">
+                <form action="/account" id="create_customer">
+                    <header class="form-header">
+                        <h1 class="u-h1">Recover password</h1>
+                        
+                        <p class="form-legend">Please enter your email:</p>
+                    </header>
+
+
+                    <div class="form-imput-div">
+                        <input type="email" id="email" class="form-input" name="customer[email]" aria-label="Email"
+                            placeholder="Email" required="required">
+                        <label class="form-input-lable">Email</label>
+                    </div>
+
+                    <button type="submit" class="recover-btn">recover</button>
+                    <div class="Form__Hint Form__Hint--center">
+                        <span class="Text--subdued">Remember your password?</span>
+                        <a href="loginpage.html" class="ac-link ac-link--secondary">Back to login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+</script>

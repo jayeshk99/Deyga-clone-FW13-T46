@@ -7,392 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Degya</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://kit.fontawesome.com/a52cae5fae.js" crossorigin="anonymous"></script>
     <style>
-        header{
-        background-color: transparent;
-        position: relative;
-        color: white;
-        border-bottom: 1px solid rgb(218, 218, 218);
-        height: 182px;
-        z-index: 99;
-        }
-        .menu a{
-        color: white;
-        }
-        #search{
-        border-bottom: 1px solid white;
-        }
-        #search::placeholder{
-        color: white;
-        }
-        input:focus{
-        outline: none;
-        }
-        #searchBtn{
-        color: white;
-        }      
-.prductImgDiv{
-width: 100%;
-}
-.prductImgDiv>img{
-width: 100%;
-}
-.productDetailsDiv{
-text-align: center;
-width: 100%;
-height: 80px;
-}
-.productDetailsDiv>div>span{
-display: inline-block;
-}
-.productNameDiv{
-font-size: 13px;
-margin-top: 15px;
-}
-.productReviewsDiv>span{
-font-size: 12px;
-margin-top: 15px;
-}
-.checked{
-color: #FFD200;
-}
-.productPriceDiv>span{
-font-size: 12px;
-font-weight: bold;
-}
-#deals{
-background-color: #fdf9f0;
-}
-.grab-deals{
-margin: auto;
-max-width: 1300px;
-padding: 50px 0px;
-
-}
-.best-sellers .row{
-display: flex;
-justify-content: space-between;
-gap: 60px;
-}
-.headings{
-text-align: center;
-padding-bottom: 40px;
-}
-.headings h1{
-font-size: 40px;
-color: #464646;
-margin: 0px;
-}
-.headings h2{
-font-size: 20px;
-color: #454545;
-font-weight: 500;
-}
-.headings .row{
-display: flex;
-justify-content: center;
-gap: 60px;
-}
-.banners{
-width: 1400px;
-margin: auto;
-}
-#features{
-border-top:1px solid rgb(201, 201, 201);
-border-bottom:1px solid rgb(201, 201, 201);
-}
-.pressFeatures {
-width: 900px;
-margin: auto;
-text-align: center;
-padding: 100px 0px;
-}
-.awards {
-width: 1200px;
-margin: auto;
-text-align: center;
-padding: 100px 0px;
-}
-.pressFeatures .col img{
-width: 23%;
-}
-.awards .col img{
-width: 32%;
-}
-.pressFeatures .row .col{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-.banner{
-margin-top: 40px;
-width: 100%;
-}
-.banners .row .col{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-}
-.banners .col img{
-width: 31%;
-}
-.banners .row{
-margin: 30px 0px;
-}
-.blogs {
-width: 1300px;
-margin: auto;
-text-align: center;
-padding-bottom: 50px;
-}
-.blogs .row .col{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-.blogs .col img{
-width: 32%;
-}
-.awards {
-width: 1200px;
-margin: auto;
-text-align: center;
-padding: 100px 0px;
-}
-.pillars {
-width: 900px;
-margin: auto;
-text-align: center;
-padding: 100px 0px;
-}
-.pillars .row .col{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-.pillars .row{
-padding-bottom: 80px;
-}
-.pillars img{
-width: 50%;
-}
-.flip-card {
-background-color: transparent;
-width: 270px;
-height: 270px;
-perspective: 1000px;
-}
-
-.flip-card-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.6s;
-transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-position: absolute;
-width: 100%;
-height: 100%;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-.flip-card-front {
-color: black;
-}
-
-.flip-card-back {
-color: black;
-font-size: 14px;
-font-weight: 400;
-display: flex;
-align-items: center;
-line-height: 25px;
-padding: 10px;
-background-color: #f2f2f2;
-transform: rotateY(180deg);
-}
-/* slider css */
-#slider{
-padding: 100px 0px;
-
-}
-.sliderImg{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-padding: 0px 20px;
-}
-#main {
-width: 95%;
-position: relative;
-overflow: hidden;
-margin: auto;
-}
-#sliderjk {
-width: 100%;
-height: 100%;
-list-style: none;
-left: 0;
-margin: 0;
-padding: 0;
-position: relative;
-transition: all 0.75s ease;
-display: flex;
-}
-.slideBox {
-height: 100%;
-float: left;
-}
-.slideBox img{
-width: 230px;
-}
-
-#sliderjk > a {
-margin: 0px 22px;
-}
-#slideBox > a:nth-child(1) {
-margin-left: 0px;
-}
-#slider .btn {
-top: 40%;
-text-decoration: none;
-padding-left: 5px;
-background: none;
-border: none;
-cursor: pointer;
-color: black;
-z-index: 99;
-}
-#main .material-icons {
-font-size: 30px;
-}
-#nextjk {
-right: 0;
-}
-#prevjk:hover,
-#nextjK:hover {
-color: rgb(192, 192, 192);
-}
-
-/*
-main slider csssss */
-#mainSlider{
-max-width: 100%;
-margin-top: -182px;
-z-index: 2;
-background-color: #fdf9f0;
-}
-#mainSlider img,video{
-width: 100%;
-}
-video {
-right: 0;
-top: 0;
-min-width: 100%;
-min-height: 100%;
-}
-/* Slideshow container */
-.slideshow-container {
-max-width:100%;
-position: relative;
-margin: auto;
-}
-#dots{
-position:absolute;
-right:0;
-margin-top:-70px;
-z-index:99;
-margin-right: 30px;
-}
-/* img{
-width:90%;
-} */
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -22px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 10px;
-width: 9px;
-margin: 0 5px;
-background-color: transparent;
-border: 1px solid white;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-background-color: white;
-}
-
-/* Fading animation */
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframesfade{
-    from {opacity: .4}
-    to {opacity: 1}
+        @media only screen and (min-width:1241px) and (max-width: 1380px) {
+    .header-wrapper{
+        max-width: 1200px;
     }
+ 
+ }
+@media only screen and (max-width: 1240px) {
+    header{
+        height: 100px;
+    }
+    nav{
+    display:none;
+    }
+    .header-lists{
+        display: none;
+    }
+    .account{
+        display: none;
+    }
+    .mb-header-lists{
+        display: block;
+    }
+    .mb-account{
+        display:flex;
+    }
+    .logo img{
+        height: 100px;
+    }
+ }
 
-    /* On smaller screens, decrease text size */
-    @mediaonlyscreenand(max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
-        }
+ /* slider  */
+.mainSlider {
+  max-width: 1350px;
+  padding: 0px 5px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  grid-gap: 0.8rem;
+  /* gap: 3.9rem; */
+  padding: 0 0.8rem;
+  margin: 0 -0.8rem;
+  display: flex;
+  left: 0;
+  transition: left 0.3s ease-out;
+  position: relative;
+}
+
+.SliderCardp {
+  border: 1 solid #fff;
+  box-sizing: content-box;
+  min-width: 16rem;
+  max-width: 17rem;
+}
+
+.SliderCard {
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0px 24px;
+}
+
+.SliderCardLink,
+.SliderCardLink:active,
+.SliderCardLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.SliderCardLink img {
+  width: 100%;
+}
+
+.sliderCardDiv {
+  height: 100%;
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+.sliderCardHeading {
+  color: #2f3337;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.sliderCardTitle {
+  color: #2f3337;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.mainSlider .btn {
+  position: absolute;
+  top: 40%;
+  text-decoration: none;
+  padding:6px 9px;
+  margin: -0.1rem;
+  background-color: white;
+  border: wheat;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mainSlider .btn img{
+ margin-top: 2px;
+}
+
+#nextwatch {
+  right: 0;
+  margin-right: 2px;
+}
+
+#prevwatch:hover,
+#nextwatch:hover {
+  color: rgb(192, 192, 192);
+}
+/* end slider */
     </style>
 </head>
 
 <body>
     <header></header>
     <main>
+        <!-- Home page banners slider -->
         <section id="mainSlider">
             <div class="slideshow-container">
 
@@ -441,124 +195,535 @@ animation-duration: 1.5s;
                 <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </section>
+<!-- best seller products -->
+
         <section id="deals">
             <div class="grab-deals">
                 <div class="headings">
                     <h1>Grab it Now</h1>
                     <div class="row">
-                        <h2><u>Best Seller</u> </h2>
-                        <h2>Loved Combos</h2>
+                        <h2 onclick="showBestSeller()" id="best">Best Seller</h2>
+                        <h2 onclick="showCombos()" id="combo">Loved Combos</h2>
                     </div>
                 </div>
-                <div class="best-sellers">
-                    <div class="row">
-                        <div class="productCard">
-                            <div class="prductImgDiv">
-                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
-                                    class="productImg">
-                            </div>
-                            <div class="productDetailsDiv">
-                                <div class="productNameDiv">
-                                    Beautifying Serum
+                <div class="best-sellers animated animatedFadeInUp fadeInUp" id="bestSeller">
+                    <div class="mainSlider">
+                        <div class="slider">
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="productReviewsDiv">
-                                    <span>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                    </span>
-                                    <span> 121 reviews</span>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="productPriceDiv">
-                                    <span>
-                                        MRP Rs.730
-                                    </span>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
                         </div>
-                        <div class="productCard">
-                            <div class="prductImgDiv">
-                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
-                                    class="productImg">
-                            </div>
-                            <div class="productDetailsDiv">
-                                <div class="productNameDiv">
-                                    Beautifying Serum
+                        <button class="btn" href="#" id="prevwatch">
+                          <img
+                            src="https://i.postimg.cc/Pqp9GMrQ/Chevron-Left.png"
+                            alt=""
+                          />
+                        </button>
+                        <button class="btn" href="#" id="nextwatch">
+                          <img
+                            src="https://i.postimg.cc/K8Zmywdr/Chevron-Right.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                </div>
+                <div class="best-sellers animated animatedFadeInUp fadeInUp" id="combos">
+                    <div class="mainSlider">
+                        <div class="slider">
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="productReviewsDiv">
-                                    <span>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                    </span>
-                                    <span> 121 reviews</span>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="productPriceDiv">
-                                    <span>
-                                        MRP Rs.730
-                                    </span>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="SliderCard SliderCardp">
+                            <a class="SliderCardLink" href="">
+                                <div class="productCard">
+                                    <div class="prductImgDiv">
+                                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                                            class="productImg">
+                                    </div>
+                                    <div class="productDetailsDiv">
+                                        <div class="productNameDiv">
+                                            Beautifying Serum
+                                        </div>
+                                        <div class="productReviewsDiv">
+                                            <span>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                            </span>
+                                            <span> 121 reviews</span>
+                                        </div>
+                                        <div class="productPriceDiv">
+                                            <span>
+                                                MRP Rs.730
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>
                         </div>
-                        <div class="productCard">
-                            <div class="prductImgDiv">
-                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
-                                    class="productImg">
-                            </div>
-                            <div class="productDetailsDiv">
-                                <div class="productNameDiv">
-                                    Beautifying Serum
-                                </div>
-                                <div class="productReviewsDiv">
-                                    <span>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                    </span>
-                                    <span> 121 reviews</span>
-                                </div>
-                                <div class="productPriceDiv">
-                                    <span>
-                                        MRP Rs.730
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="productCard">
-                            <div class="prductImgDiv">
-                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
-                                    class="productImg">
-                            </div>
-                            <div class="productDetailsDiv">
-                                <div class="productNameDiv">
-                                    Beautifying Serum
-                                </div>
-                                <div class="productReviewsDiv">
-                                    <span>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                        <i class="fas fa-star checked"></i>
-                                    </span>
-                                    <span> 121 reviews</span>
-                                </div>
-                                <div class="productPriceDiv">
-                                    <span>
-                                        MRP Rs.730
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button class="btn" href="#" id="prevwatch">
+                          <img
+                            src="https://i.postimg.cc/Pqp9GMrQ/Chevron-Left.png"
+                            alt=""
+                          />
+                        </button>
+                        <button class="btn" href="#" id="nextwatch">
+                          <img
+                            src="https://i.postimg.cc/K8Zmywdr/Chevron-Right.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
                 </div>
             </div>
+<!-- banners code -->
             <div class="banners">
                 <div class="headings">
                     <h1>Best Selling Combos</h1>
@@ -703,6 +868,84 @@ animation-duration: 1.5s;
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Founders details and about us -->
+        <section id="info">
+            <div class="information">
+                <div id="founderInfo">
+                    <div class="row">
+                        <div class="col in-left" id="founderImg">
+                            <!-- <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/IMG_02652_1000x_d2d045a9-97e0-45ef-bd67-115b8fa3072e_1000x.jpg?v=1630642875"
+                                alt=""> -->
+                        </div>
+                        <div class="col animated animatedFadeInUp fadeInUp">
+                            <div class="headings">
+                                <h1 style="text-align: left;">Founders's Corner</h1>
+                                <p>Arthi Raguram, the founder of Deyga, is a new-age entrepreneur whose passion for
+                                    creating
+                                    nature-inspired, self care products has been a driving force of the brand. Her
+                                    skincare
+                                    journey
+                                    began very early as she was an athletic student who was always out the sun. Natural
+                                    ingredients
+                                    helped her skin stay protected and healthy.</p>
+                                <p>Growing up with sensitive skin, Arthi decided to steer clear away from products
+                                    loaded with
+                                    harsh
+                                    chemicals. She maintains this resolve with every Deyga creation as well. Arthi made
+                                    sure
+                                    every
+                                    ingredient was handpicked and every product was responsibly crafted. Deyga has now
+                                    made
+                                    waves
+                                    and broke barriers as a community of Eco-conscious customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pure">
+                    <div class="row">
+                        <div class="col in-left" id="pureImg">
+                        </div>
+                        <div class="col animated animatedFadeInUp fadeInUp">
+                            <div class="headings">
+                                <h1 style="text-align: left;">Pure and Natural</h1>
+                                <p>100% Pure. We aim to create the world's most pure, organic and all-natural line of
+                                    cosmetics,
+                                    beauty products and skincare. Our cosmetics are formulated with high-performing
+                                    antioxidants, naturally occurring vitamins and essential oils to give your skin
+                                    maximum
+                                    benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="promise">
+                    <div class="row">
+                        <div class="col in-left" id="promiseImg">
+                        </div>
+                        <div class="col animated animatedFadeInUp fadeInUp">
+                            <div class="headings">
+                                <h1 style="text-align: left;">No Compromise</h1>
+                                <p>Quality is our priority. Every ingredient is sourced from the best of farms across
+                                    india. The
+                                    products reflect a fresh feel and fragrance. </p>
+                                <p>MOST IMPORTANTLY - <br><br>
+
+                                    OUR PRODUCTS DO NOT CONTAIN SLS, SLES, Parabens, MEA, DEA, TEA, Petrolatum,
+                                    Phthalates,
+                                    Ethoxylates and Silicones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-btns">
+                <button onclick="showAbout()" id="aboutBtn">About</button>
+                <button onclick="showPure(this)" id="pureBtn">100% Pure</button>
+                <button onclick="showQuality(this)" id="promiseBtn">Quality Promise</button>
             </div>
         </section>
 
@@ -873,9 +1116,7 @@ animation-duration: 1.5s;
                 </div>
             </div>
         </section>
-
-
-          <!-- Our Blogs -->
+        <!-- Our Blogs -->
           <section id="ourBlogs">
               <div class="blogs">
                   <div class="headings">
@@ -894,77 +1135,128 @@ animation-duration: 1.5s;
               </div>
           </section>
 
-<section id="slider">
-    <div class="headings">
-        <h1>Superstars Who Skincared</h1>
-    </div>
-    <div class="sliderImg">
-        <button class="btn" href="#" id="prevjk">
-            <i class="material-icons">arrow_back_ios</i>
-        </button>
-        <div id="main">
-            <div id="sliderjk">
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-01_b068a86d-a015-459f-b115-b8199b331a31.jpg?v=1630645213"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-02_80fb14c1-7ddd-4113-82ae-3d65e2a5bfdc.jpg?v=1630645230"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-09_dde80092-5b3c-4021-a83c-27e52cbe6663.jpg?v=1630645247"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-03_99b7133e-c479-4de1-afa1-5c5958fe9222.jpg?v=1630645266"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-04_72f9fe45-c1f5-4442-9ca5-7b239816969a.jpg?v=1630645285"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-11_b408b4b3-5f52-4345-b14b-791c051018a2.jpg?v=1630645307"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-15_cdfe28dc-63b7-483c-9488-9a67109e1ceb.jpg?v=1630645343"
-                            alt="" />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="slideBox">
-                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-13_fa2a1f6e-4f10-4c98-a7be-2e3a9e61161e.jpg?v=1630645382"
-                            alt="" />
-                    </div>
-                </a>
+<!-- testimonial slider -->
+        <section id="slider">
+            <div class="headings">
+                <h1>Superstars Who Skincared</h1>
             </div>
-        </div>
+            <div class="sliderImg">
+                <button class="btn" href="#" id="prevjk">
+                    <i class="material-icons">arrow_back_ios</i>
+                </button>
+                <div id="main">
+                    <div id="sliderjk">
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-01_b068a86d-a015-459f-b115-b8199b331a31.jpg?v=1630645213"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-02_80fb14c1-7ddd-4113-82ae-3d65e2a5bfdc.jpg?v=1630645230"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-09_dde80092-5b3c-4021-a83c-27e52cbe6663.jpg?v=1630645247"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-03_99b7133e-c479-4de1-afa1-5c5958fe9222.jpg?v=1630645266"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-04_72f9fe45-c1f5-4442-9ca5-7b239816969a.jpg?v=1630645285"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-11_b408b4b3-5f52-4345-b14b-791c051018a2.jpg?v=1630645307"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-15_cdfe28dc-63b7-483c-9488-9a67109e1ceb.jpg?v=1630645343"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slideBox">
+                                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Testimonial_with_pictures-13_fa2a1f6e-4f10-4c98-a7be-2e3a9e61161e.jpg?v=1630645382"
+                                    alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-        <button class="btn" href="#" id="nextjk">
-            <i class="material-icons">arrow_forward_ios</i>
-        </button>
-    </div>
-</section>
-          </main>
-          <footer></footer>
+                <button class="btn" href="#" id="nextjk">
+                    <i class="material-icons">arrow_forward_ios</i>
+                </button>
+                </div>
+                </section>
+
+    </main>
+    <footer></footer>
 </body>
 
 </html>
+<script>
+    
+// best seller section js
+document.getElementById("best").style.cursor = "pointer";
+document.getElementById("combo").style.cursor = "pointer";
+let showBestSeller = ()=>{
+    document.getElementById("bestSeller").style.display = "block";
+    document.getElementById("combos").style.display = "none";
+    document.getElementById("best").style.textDecoration = "underline";
+    document.getElementById("combo").style.textDecoration = "none";
+}
+let showCombos = ()=>{
+    document.getElementById("best").style.textDecoration = "none";
+    document.getElementById("combo").style.textDecoration = "underline";
+    document.getElementById("bestSeller").style.display = "none";
+    document.getElementById("combos").style.display = "block";
+}
+showBestSeller()
+// founders section js
+    let showAbout = () => {
+        document.getElementById("aboutBtn").setAttribute("class", "selected");
+        document.getElementById("pureBtn").removeAttribute("class");
+        document.getElementById("promiseBtn").removeAttribute("class");
+
+        document.getElementById("founderInfo").style.display = "block";
+        document.getElementById("pure").style.display = "none";
+        document.getElementById("promise").style.display = "none";
+    }
+    let showPure = (e) => {
+        document.getElementById("aboutBtn").removeAttribute("class");
+        document.getElementById("pureBtn").setAttribute("class", "selected");
+        document.getElementById("promiseBtn").removeAttribute("class");
+
+        document.getElementById("founderInfo").style.display = "none";
+        document.getElementById("pure").style.display = "block";
+        document.getElementById("promise").style.display = "none";
+    }
+    let showQuality = (e) => {
+        document.getElementById("aboutBtn").removeAttribute("class");
+        document.getElementById("pureBtn").removeAttribute("class");
+        document.getElementById("promiseBtn").setAttribute("class", "selected");
+
+        document.getElementById("founderInfo").style.display = "none";
+        document.getElementById("pure").style.display = "none";
+        document.getElementById("promise").style.display = "block";
+    }
+    showAbout();
+</script>
+
 <script type="module">
     import {navbar,footer} from "./components/navbar.js";
     let header = document.querySelector("header");
@@ -1039,4 +1331,64 @@ animation-duration: 1.5s;
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+
+
+    function responsivewatchSlider() {
+  var slideList = document.querySelector(".slider");
+
+  var count = 1;
+  var click = 2;
+  var size = document.querySelector(".slider").offsetWidth;
+  if (size < 998) {
+    click = 2;
+  }
+  if (count == 1) {
+     document.getElementById("prevwatch").style.opacity = 0;
+    document.getElementById("prevwatch").style.display = "hidden";
+  }
+  console.log(size);
+  function prevwatchSlide() {
+    if (count == 2) {
+      document.getElementById("prevwatch").style.opacity = 0;
+    }
+    if (count > 1) {
+      count = count - 2;
+      slideList.style.left = "-" + count * 1300 + "px";
+
+      document.getElementById("nextwatch").style.opacity = 1;
+
+      count++;
+    } else {
+      document.getElementById("prevwatch").style.opacity = 0;
+      document.getElementById("prevwatch").style.display = "hidden";
+    }
+  }
+  function nextwatchSlide() {
+    if (count == click - 1) {
+      document.getElementById("nextwatch").style.opacity = 0;
+      document.getElementById("nextwatch").style.display = "hidden";
+    }
+    if (count < click+1) {
+      slideList.style.left = "-" + count * 1300 + "px";
+
+      document.getElementById("prevwatch").style.opacity = 1;
+      count++;
+    } else {
+      document.getElementById("nextwatch").style.opacity = 0;
+      document.getElementById("nextwatch").style.display = "hidden";
+    }
+  }
+  document
+    .getElementById("prevwatch")
+    .addEventListener("click", prevwatchSlide);
+  document
+    .getElementById("nextwatch")
+    .addEventListener("click", nextwatchSlide);
+}
+let page = (name) => {
+  var pageName = localStorage.getItem("pageName") || "";
+  localStorage.setItem("pageName", name);
+  console.log(name);
+};
+responsivewatchSlider();
 </script>
