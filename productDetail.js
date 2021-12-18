@@ -16,24 +16,24 @@ let footerPart = document.querySelector("footer");
 footerPart.innerHTML = footer();
 
 let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
-console.log(currUser )
-if(currUser != 0){
+console.log(currUser)
+if (currUser != 0) {
   document.getElementById("User").textContent = currUser["username"];
   document.getElementById("logoutUser").style.display = "none";
   document.getElementById("loginUser").style.display = "block";
-}else{
+} else {
   document.getElementById("User").textContent = "Account";
   document.getElementById("logoutUser").style.display = "block";
   document.getElementById("loginUser").style.display = "none";
 }
 
-document.getElementById("logout").addEventListener("click",function(){
-    currUser = 0;
-    document.getElementById("User").textContent = "Account";
-    document.getElementById("logoutUser").style.display = "block";
-    document.getElementById("loginUser").style.display = "none";
-    localStorage.setItem("loginUser",JSON.stringify(currUser));
-    window.location.href = "loginpage.html";
+document.getElementById("logout").addEventListener("click", function () {
+  currUser = 0;
+  document.getElementById("User").textContent = "Account";
+  document.getElementById("logoutUser").style.display = "block";
+  document.getElementById("loginUser").style.display = "none";
+  localStorage.setItem("loginUser", JSON.stringify(currUser));
+  window.location.href = "loginpage.html";
 })
 
 // -------------------path of page-----------------------------
@@ -41,7 +41,7 @@ let path = document.getElementById("path");
 let pathDiv = document.createElement("div");
 pathDiv.setAttribute("id", "pathDiv");
 pathDiv.innerHTML = `<a href="index.html" class="linkPath">Home ></a>
-<a href="category.html" class="linkPath"> Skin Care ></a>
+<a href="category.html" class="linkPath" id="clickedCat"></a>
 <a href="" class="linkPath">${productDetailData.productName}</a>`;
 path.append(pathDiv);
 // -----------nav hiding & showing on scroll ----------------
@@ -285,3 +285,43 @@ console.log(cartitemsNo);
 let cartLengthShow = document.querySelector(".dropdown+li>p>b");
 console.log(cartLengthShow)
 cartLengthShow.innerText = `Cart (${cartitemsNo})`;
+
+let clickedCategory = JSON.parse(localStorage.getItem("clickedCategory"));
+let productData = JSON.parse(localStorage.getItem(`${clickedCategory}`));
+let camelArr = ["skinCare", "babyCareProduct", "menProduct", "comboProduct", "hairCareData", "bathBody", "OralCare", "wellNess"];
+let nameArr = ["Skin Care", "Baby Care", "Men", "Combo", "Hair Care", "Bath & Body", "Oral Care", "Wellness"]
+for (let k = 0; k < camelArr.length; k++) {
+  if (clickedCategory === camelArr[k]) {
+
+    document.getElementById("clickedCat").textContent = `${nameArr[k]} >`;
+    break;
+  }
+}
+
+
+// category click function
+document.querySelector(".menu>ul>li:nth-child(1)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("skinCare"));
+})
+document.querySelector(".menu>ul>li:nth-child(2)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("hairCareData"));
+})
+document.querySelector(".menu>ul>li:nth-child(3)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("bathBody"));
+})
+document.querySelector(".menu>ul>li:nth-child(4)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("OralCare"));
+})
+document.querySelector(".menu>ul>li:nth-child(5)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("wellNess"));
+})
+document.querySelector(".menu>ul>li:nth-child(6)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("babyCareProduct"));
+})
+document.querySelector(".menu>ul>li:nth-child(7)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("menProduct"));
+})
+document.querySelector(".menu>ul>li:nth-child(8)").addEventListener("click", () => {
+  localStorage.setItem("clickedCategory", JSON.stringify("comboProduct"));
+})
+

@@ -1,4 +1,4 @@
-let productData = [
+let skinCare = [
   {
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/71503313_23843770495820528_3471803570674728960_n_400x.png?v=1623384495",
@@ -426,7 +426,7 @@ let babyCareProduct = [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_160x.png?v=1565679776",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_9_700x.jpg?v=1565679776",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_10_700x.jpg?v=1565679776",
-      
+
     ],
 
     productName: "Baby Bath Bar ",
@@ -496,7 +496,7 @@ let babyCareProduct = [
   {
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Group-1000px_6_700x.jpg?v=1547118816",
-      
+
     ],
 
     productName: "Baby Care Kit",
@@ -517,7 +517,7 @@ let menProduct = [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_1_700x.jpg?v=1632144261",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_3_700x.jpg?v=1609860890",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_4_160x.jpg?v=1609860890",
-      
+
     ],
 
     productName: "Charcoal Bath Bar ",
@@ -572,7 +572,7 @@ let menProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03157_df108c3c-a3e6-4638-9e05-e5d8ee3f8cf4_700x.jpg?v=1609388148",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_15_b500a4d3-69b0-40bf-9806-9beab343fd3b_160x.jpg?v=1609388160",
-      
+
     ],
 
     productName: "Coconut Milk Shampoo Bar",
@@ -588,7 +588,7 @@ let menProduct = [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_9_160x.jpg?v=1623384929",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/deyga_organics_50615103_312177679427359_3347923219407533453_n_160x.jpg?v=1623384929",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/CharcoalFAcePack_160x.jpg?v=1623384929",
-      
+
     ],
 
     productName: "Charcoal Face Pack 200G",
@@ -604,7 +604,7 @@ let menProduct = [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Shea_Butter_Lip_160x.jpg?v=1623389294",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Internal_Shea_Butter_160x.jpg?v=1623389294",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/SheaButter_160x.jpg?v=1623389294",
-      
+
     ],
 
     productName: "Shea Butter Lip Balm",
@@ -619,7 +619,7 @@ let menProduct = [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07958_1000x1000_1afb2825-1ce7-4682-82d2-0cf3241dfef8_700x.jpg?v=1629347023",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MAN_6e32e2d0-6b09-44d9-a590-645b9f3c2193_160x.jpg?v=1629347023",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/ManPowder_1000x1000_e01c1511-c3ae-4f53-bdad-fdd88c77cc03_160x.jpg?v=1629347018",
-      
+
     ],
 
     productName: "Man Body Powder ",
@@ -636,8 +636,8 @@ let comboProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.07.53PM_700x.jpg?v=1613130415",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/1_1_160x.jpg?v=1613130415",
-      
-      
+
+
     ],
 
     productName: "Nourished Lips Combo ",
@@ -651,7 +651,7 @@ let comboProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.55.59PM_700x.jpg?v=1613130278",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/4_2a046bee-cc74-441c-8ae8-7e536ae4868e_160x.jpg?v=1613130278",
-      
+
     ],
 
     productName: "Acne Vanishing Combo",
@@ -665,7 +665,7 @@ let comboProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9708_2_700x.jpg?v=1609840625",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-03_160x.jpg?v=1609840625",
-      
+
     ],
 
     productName: "Hair Strengthening Combo ",
@@ -691,8 +691,8 @@ let comboProduct = [
   {
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_5_700x.jpg?v=1618674110",
-      
-      
+
+
     ],
 
     productName: "Summer Hydration Combo",
@@ -706,8 +706,8 @@ let comboProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.07.56PM_700x.jpg?v=1613130376",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/2_1_160x.jpg?v=1613130376",
-      
-      
+
+
     ],
 
     productName: "Face Care Essentials Combo",
@@ -721,8 +721,8 @@ let comboProduct = [
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9713_2_700x.jpg?v=1609840468",
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-04_1_160x.jpg?v=1609840468",
-      
-      
+
+
     ],
 
     productName: "Healthy Glow Combo",
@@ -735,8 +735,8 @@ let comboProduct = [
   {
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Square_700x.jpg?v=1609417960",
-      
-      
+
+
     ],
 
     productName: "Best Sellers' Hamper",
@@ -1125,6 +1125,13 @@ let wellNess = [
   },
 ];
 function setDataToLocal() {
-  localStorage.setItem("productData", JSON.stringify(productData));
+  localStorage.setItem("skinCare", JSON.stringify(skinCare));
+  localStorage.setItem("babyCareProduct", JSON.stringify(babyCareProduct));
+  localStorage.setItem("menProduct", JSON.stringify(menProduct));
+  localStorage.setItem("comboProduct", JSON.stringify(comboProduct));
+  localStorage.setItem("hairCareData", JSON.stringify(hairCareData));
+  localStorage.setItem("bathBody", JSON.stringify(bathBody));
+  localStorage.setItem("OralCare", JSON.stringify(OralCare));
+  localStorage.setItem("wellNess", JSON.stringify(wellNess));
 }
 export { setDataToLocal };
