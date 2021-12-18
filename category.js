@@ -21,6 +21,27 @@ footerPart.innerHTML = footerComp;
 
 setDataToLocal();
 
+
+let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
+console.log(currUser )
+if(currUser != 0){
+  document.getElementById("User").textContent = currUser["username"];
+  document.getElementById("logoutUser").style.display = "none";
+  document.getElementById("loginUser").style.display = "block";
+}else{
+  document.getElementById("User").textContent = "Account";
+  document.getElementById("logoutUser").style.display = "block";
+  document.getElementById("loginUser").style.display = "none";
+}
+
+document.getElementById("logout").addEventListener("click",function(){
+    currUser = 0;
+    document.getElementById("User").textContent = "Account";
+    document.getElementById("logoutUser").style.display = "block";
+    document.getElementById("loginUser").style.display = "none";
+    localStorage.setItem("loginUser",JSON.stringify(currUser));
+    window.location.href = "loginpage.html";
+})
 // ----------- disabling and enabling body scroll ----------
 
 function disableBodyScroll() {
@@ -277,3 +298,4 @@ cartLengthShow.innerText = `Cart (${cartitemsNo})`;
 //     ratingSpan.append(starSpan);
 //     i++;
 // }
+
