@@ -44,12 +44,14 @@ let navbar = () => {
                     </button></p>
             </div>
             <div id="submenu">
-
                 <ul>
                     <li class="dropdown">
-                        <p><b>Account</b></p>
+                        <p id="User"><b>Account</b></p>
                         <div class="dropdown-content-account" id="dropdown-content-account">
-                                <ul>
+                                <ul id="loginUser">
+                                    <li><a id="logout">Logout</a></li>
+                                </ul>
+                                <ul id="logoutUser">
                                     <li><a href="loginpage.html">Login</a></li>
                                     <li>Track Order</li>
                                     <li><a href="signup.html">Signup</a> </li>

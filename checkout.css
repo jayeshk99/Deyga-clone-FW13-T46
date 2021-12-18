@@ -1,8 +1,20 @@
-body{
-    width: 80%;
+@font-face {
+    font-family: 'Cartner Sans W01';
+    src: url('/font/carter-sans-w01.ttf') format('truetype')
+    }
+    body{
+        width: 80%;
+    font-family: "Cartner Sans W01" ;
     /* background-color: burlywood; */
     margin: auto;
     font-size: 19px;
+}
+
+body p{
+    font-size: 13px;
+}
+h2{
+    font-size: 18px;
 }
 
 .checkoutPage{
