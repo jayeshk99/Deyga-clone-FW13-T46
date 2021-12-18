@@ -253,6 +253,14 @@ document.querySelector("#sortList>ul>li:nth-child(1)").addEventListener("click",
 document.querySelector("#sortList>ul>li:nth-child(2)").addEventListener("click", zToaSort);
 document.querySelector("#sortList>ul>li:nth-child(3)").addEventListener("click", lowSort);
 document.querySelector("#sortList>ul>li:nth-child(4)").addEventListener("click", highSort);
+
+
+// updating cart items value in navbar
+let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length;
+console.log(cartitemsNo);
+let cartLengthShow = document.querySelector(".dropdown+li>p>b");
+console.log(cartLengthShow)
+cartLengthShow.innerText = `Cart (${cartitemsNo})`;
 // appending rating stars
 
 // let ratingSpan = document.createElement("span");
