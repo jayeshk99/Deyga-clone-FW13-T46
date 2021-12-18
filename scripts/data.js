@@ -1,4 +1,4 @@
-let productData = [
+let skinCare = [
   {
     productImgUrl2: [
       "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/71503313_23843770495820528_3471803570674728960_n_400x.png?v=1623384495",
@@ -1105,6 +1105,13 @@ let wellNess = [
   },
 ];
 function setDataToLocal() {
-  localStorage.setItem("productData", JSON.stringify(productData));
+  localStorage.setItem("skinCare", JSON.stringify(skinCare));
+  localStorage.setItem("babyCareProduct", JSON.stringify(babyCareProduct));
+  localStorage.setItem("menProduct", JSON.stringify(menProduct));
+  localStorage.setItem("comboProduct", JSON.stringify(comboProduct));
+  localStorage.setItem("hairCareData", JSON.stringify(hairCareData));
+  localStorage.setItem("bathBody", JSON.stringify(bathBody));
+  localStorage.setItem("OralCare", JSON.stringify(OralCare));
+  localStorage.setItem("wellNess", JSON.stringify(wellNess));
 }
 export { setDataToLocal };

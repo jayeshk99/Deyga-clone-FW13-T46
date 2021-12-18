@@ -79,7 +79,7 @@
         window.location.href = "recover.html";
     }
     document.querySelector(".login-btn").addEventListener('click', login);
-    var regdUsers = JSON.parse(localStorage.getItem("userData"));
+    var regdUsers = JSON.parse(localStorage.getItem("userData")) || [];
     console.log(regdUsers)
 
     function login(e) {
@@ -96,15 +96,19 @@
                     regdUsers[i].email == email &&
                     regdUsers[i].passWord == pass
                 ) {
-
+                    let userData = {
+                        username :   regdUsers[i].userName,
+                        email :   regdUsers[i].email,
+                        passWord :   regdUsers[i].passWord,
+                    }
+                    let currentUser = localStorage.setItem("loginUser",JSON.stringify(userData))
                     alert("login successful");
                     window.location.href = "index.html";
-                    break;
-                } else {
-                    alert("Wrong email or password")
-                    break;
-                }
+                   break;
+                }      alert("Wrong email or password")
             }
+              
+                 
         }
 
     }
@@ -115,5 +119,27 @@
     let footerhtml = document.querySelector("footer");
     header.innerHTML = navbar();
     footerhtml.innerHTML = footer();
+
+
+let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
+console.log(currUser )
+if(currUser != 0){
+  document.getElementById("User").textContent = currUser["username"];
+  document.getElementById("logoutUser").style.display = "none";
+  document.getElementById("loginUser").style.display = "block";
+}else{
+  document.getElementById("User").textContent = "Account";
+  document.getElementById("logoutUser").style.display = "block";
+  document.getElementById("loginUser").style.display = "none";
+}
+
+document.getElementById("logout").addEventListener("click",function(){
+    currUser = 0;
+    document.getElementById("User").textContent = "Account";
+    document.getElementById("logoutUser").style.display = "block";
+    document.getElementById("loginUser").style.display = "none";
+    localStorage.setItem("loginUser",JSON.stringify(currUser));
+    window.location.href = "loginpage.html";
+})
 
 </script>
