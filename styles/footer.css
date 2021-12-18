@@ -11,7 +11,7 @@
     }
     .footer-wrapper{
         margin: auto;
-        max-width: 1500px;
+        max-width: 1400px;
         text-align: center;
         }
 
@@ -54,10 +54,11 @@
         }
 
         .footer-row {
-            width: 1000px;
+            max-width: 1200px;
             margin: auto;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             text-align: left;
         }
 
