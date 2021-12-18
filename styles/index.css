@@ -8,17 +8,15 @@
     margin: 0;
     padding: 0px;
     color: #28282b;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     }
     .blackBox::placeholder{
       color: black !important;
     }
     header {
-      /* background-color: red; */
     height: 182px;
-
     position: fixed;
-    margin: 0;
+    margin: 0 auto;
     z-index: 10;
     transition: ease 0.3s;
 
@@ -988,3 +986,371 @@ transform: translatex(0);
   color: rgb(192, 192, 192);
 }
 /* end slider */
+
+@media only screen and (min-width:1241px) and (max-width: 1380px) {
+  .header-wrapper{
+      max-width: 1200px;
+  }
+
+}
+@media only screen and (max-width: 1240px) {
+  header{
+      height: 100px;
+      width: 100%;
+  }
+  nav{
+  display:none;
+  }
+  .header-lists{
+      display: none;
+  }
+  .account{
+      display: none;
+  }
+  .mb-header-lists{
+      display: block;
+  }
+  .mb-account{
+      display:flex;
+  }
+  .logo img{
+      height: 100px;
+  }
+
+}
+@media only screen and  (min-width:500px) and (max-width: 1239px) {
+  .headings h1 {
+  font-size: 25px;
+      }
+      .banner {
+          margin-top: 0px;
+      }
+  .SliderCardp {
+  border: 1 solid #fff;
+  box-sizing : content-box;
+  min-width : 10rem;
+  max-width : 10rem;
+  }
+  .SliderCard {
+      flex-shrink: 0;
+      width: 100%;
+      margin: 0px 7px;
+  }
+  .best-sellers .row{
+      gap: 10px;
+      }
+  .best-sellers > .row .productCard{
+  width:45% !important ;
+  }
+  #founderInfo>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#founderInfo>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#founderInfo>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#founderInfo>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#founderInfo>.row .col:nth-child(2) h1 {
+  color: white;
+}
+main{
+  width: 100%;
+position: relative;
+top: 180px;
+}
+.stop-scroll {
+margin: 0;
+height: 100%;
+overflow: hidden;
+}
+/* slider  */
+.mainSlider {
+max-width: 1350px;
+padding: 0px 5px;
+margin: auto;
+position: relative;
+overflow: hidden;
+}
+
+.slider {
+grid-gap: 0.8rem;
+/* gap: 3.9rem; */
+padding: 0 0.8rem;
+margin: 0 -0.8rem;
+display: flex;
+left: 0;
+transition: left 0.3s ease-out;
+position: relative;
+}
+
+.SliderCardp {
+border: 1 solid #fff;
+box-sizing: content-box;
+min-width: 16rem;
+max-width: 17rem;
+}
+
+.SliderCard {
+flex-shrink: 0;
+width: 100%;
+margin: 0px 24px;
+}
+
+.SliderCardLink,
+.SliderCardLink:active,
+.SliderCardLink:hover {
+text-decoration: none;
+color: inherit;
+}
+
+.SliderCardLink img {
+width: 100%;
+}
+
+.sliderCardDiv {
+height: 100%;
+width: 100%;
+padding: 1.6rem 2.4rem;
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+color: #000;
+background-color: #f5f5f5;
+}
+
+.sliderCardHeading {
+color: #2f3337;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 2.9rem;
+margin-bottom: 0.8rem;
+}
+
+#pure>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#pure>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#pure>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#pure>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#pure>.row .col:nth-child(2) h1 {
+  color: white;
+}
+
+#promise>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#promise>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#promise>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#promise>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#promise>.row .col:nth-child(2) h1 {
+  color: white;
+}
+#info {
+  padding: 40px 0px;
+}
+.information {
+   padding-bottom: 10px; 
+}
+
+.pillars .row .col {
+  flex-wrap: nowrap;
+}
+
+.flip-card {
+background-color: transparent;
+width: 170px;
+height: 170px;
+perspective: 1000px;
+}
+.flip-card img {
+width: 120px !important;
+height: 120px !important;
+}
+}
+
+@media only screen and   (max-width: 499px) {
+  #mainSlider img, video {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+  .headings h1 {
+  font-size: 20px;
+      }
+      .banner {
+          margin-top: 0px;
+      }
+  .SliderCardp {
+  border: 1 solid #fff;
+  box-sizing : content-box;
+  min-width : 10rem;
+  max-width : 10rem;
+  }
+  .SliderCard {
+      flex-shrink: 0;
+      width: 100%;
+      margin: 0px 7px;
+  }
+  .best-sellers .row{
+      gap: 10px;
+      }
+  .best-sellers > .row .productCard{
+  width:45% !important ;
+  }
+  #founderInfo>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#founderInfo>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#founderInfo>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#founderInfo>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#founderInfo>.row .col:nth-child(2) h1 {
+  color: white;
+}
+
+#pure>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#pure>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#pure>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#pure>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#pure>.row .col:nth-child(2) h1 {
+  color: white;
+}
+
+#promise>.row .col {
+  width: 100%;
+  height: 500px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+#promise>.row .col:nth-child(1) {
+  position: relative;
+  background-position: center;
+  filter: brightness(50%);
+}
+#promise>.row .col:nth-child(2) {
+  position: absolute;
+  color: white;
+  padding: 0px 30px;
+}
+#promise>.row .col:nth-child(2) .headings{
+  padding: 20px;
+}
+#promise>.row .col:nth-child(2) h1 {
+  color: white;
+}
+#info {
+  padding: 40px 0px;
+}
+.information {
+   padding-bottom: 10px; 
+}
+
+.pillars{
+  padding-top: 60px;
+}
+.pillars .row {
+  padding-bottom: 20px;
+}
+.pillars .row .col {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pressFeatures , .awards{
+  padding: 60px 0px;
+}
+
+.flip-card {
+background-color: transparent;
+width: 100%;
+perspective: 1000px;
+}
+.flip-card h3 {
+font-size: 16px;
+}
+.flip-card img {
+width: 220px !important;
+height: 220px !important;
+}
+.blogs .row{
+  padding: 0px 20px;
+}
+#slider{
+  padding: 0;;
+}
+.banners .row {
+  margin: 0px;
+  margin-top: 30px;
+}
+}
