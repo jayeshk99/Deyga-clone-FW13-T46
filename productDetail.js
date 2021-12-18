@@ -204,6 +204,9 @@ let buyItNowBtn = document.createElement("button");
 buyItNowBtn.setAttribute("id", "buyItNowBtn");
 buyItNowBtn.setAttribute("class", "buyItNowBtnhover-underline-animation");
 buyItNowBtn.textContent = "BUY IT NOW";
+buyItNowBtn.addEventListener("click", () => {
+  window.location.href = "payment.html";
+});
 btnDiv.append(addToCartBtn, viewCartBtn, buyItNowBtn);
 
 let naturalImgDiv = document.createElement("div");
