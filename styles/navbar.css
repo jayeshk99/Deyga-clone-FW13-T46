@@ -20,6 +20,7 @@
     z-index: 10;
     transition: ease 0.3s;
     background-color: white;
+    width: 100%;
     }
     header ul{
     list-style: none;
@@ -50,7 +51,10 @@
     }
     .header-lists ul li{
     margin: 0px 16px;
-    }
+    }   .mb-header-lists{
+      display: none;
+      padding: 0px 40px;
+      }
     .account{
     display: flex;
     justify-content: space-between;
@@ -59,6 +63,17 @@
     .account div{
     width: 50%;
     }
+    .mb-account{
+      display: none;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      padding: 0px 40px;
+      }
+      .mb-account div{
+      width: 50%;
+      }
     #submenu ul{
     display: flex;
     justify-content:flex-start;
