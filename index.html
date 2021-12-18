@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/a52cae5fae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/cart.css">
     <style>
-        @media only screen and (min-width:1241px) and (max-width: 1380px) {
+    @media only screen and (min-width:1241px) and (max-width: 1380px) {
     .header-wrapper{
         max-width: 1200px;
     }
@@ -43,6 +43,54 @@
     .logo img{
         height: 100px;
     }
+ 
+ }
+ @media only screen and  (min-width:500px) and (max-width: 1239px) {
+    .headings h1 {
+    font-size: 25px;
+        }
+        .banner {
+            margin-top: 0px;
+        }
+    .SliderCardp {
+    border: 1 solid #fff;
+    box-sizing : content-box;
+    min-width : 10rem;
+    max-width : 10rem;
+    }
+    .SliderCard {
+        flex-shrink: 0;
+        width: 100%;
+        margin: 0px 7px;
+    }
+    .best-sellers .row{
+        gap: 10px;
+        }
+    .best-sellers > .row .productCard{
+    width:45% !important ;
+    }
+    #founderInfo>.row .col {
+    width: 100%;
+    height: 500px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+ }
+ #founderInfo>.row .col:nth-child(1) {
+    position: relative;
+    background-position: center;
+    filter: brightness(50%);
+ }
+ #founderInfo>.row .col:nth-child(2) {
+    position: absolute;
+    color: white;
+    padding: 0px 30px;
+ }
+ #founderInfo>.row .col:nth-child(2) .headings{
+    padding: 20px;
+ }
+ #founderInfo>.row .col:nth-child(2) h1 {
+    color: white;
  }
 main{
     width: 100%;
@@ -118,38 +166,63 @@ main{
   margin-bottom: 0.8rem;
 }
 
-.sliderCardTitle {
-  color: #2f3337;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+ #pure>.row .col {
+    width: 100%;
+    height: 500px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+ }
+ #pure>.row .col:nth-child(1) {
+    position: relative;
+    background-position: center;
+    filter: brightness(50%);
+ }
+ #pure>.row .col:nth-child(2) {
+    position: absolute;
+    color: white;
+    padding: 0px 30px;
+ }
+ #pure>.row .col:nth-child(2) .headings{
+    padding: 20px;
+ }
+ #pure>.row .col:nth-child(2) h1 {
+    color: white;
+ }
+
+ #promise>.row .col {
+    width: 100%;
+    height: 500px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+ }
+ #promise>.row .col:nth-child(1) {
+    position: relative;
+    background-position: center;
+    filter: brightness(50%);
+ }
+ #promise>.row .col:nth-child(2) {
+    position: absolute;
+    color: white;
+    padding: 0px 30px;
+ }
+ #promise>.row .col:nth-child(2) .headings{
+    padding: 20px;
+ }
+ #promise>.row .col:nth-child(2) h1 {
+    color: white;
+ }
+ 
+ #info {
+    padding: 40px 0px;
+}
+ .information {
+     padding-bottom: 10px; 
+}
 }
 
-.mainSlider .btn {
-  position: absolute;
-  top: 40%;
-  text-decoration: none;
-  padding:6px 9px;
-  margin: -0.1rem;
-  background-color: white;
-  border: wheat;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.mainSlider .btn img{
- margin-top: 2px;
-}
 
-#nextwatch {
-  right: 0;
-  margin-right: 2px;
-}
-
-#prevwatch:hover,
-#nextwatch:hover {
-  color: rgb(192, 192, 192);
-}
-/* end slider */
     </style>
 </head>
 
