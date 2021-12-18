@@ -1,0 +1,231 @@
+body{
+    width: 80%;
+    /* background-color: burlywood; */
+    margin: auto;
+    font-size: 19px;
+}
+
+.checkoutPage{
+ 
+    height: 1150px;
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+.checkoutPage input{
+    border-radius: 7px;
+    border: 1px solid rgb(187, 179, 179);
+}
+.contactDiv{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 100%;
+}
+.checkoutProuduct{
+    /* border: 1px solid blue; */
+    border-left: 1px solid #e6e6e6;
+    width: 40%;
+    height: 100%;
+    /* background-color: #fafafa; */
+    /* padding: 10px; */
+    padding-left: 10px;
+
+}
+
+.checkoutLogo{
+    /* border: 1px solid blue; */
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.checkoutLogo>img{
+    width: 20%;
+}
+#conInfoCheckPage{
+    /* color: red; */
+    display: inline-block;
+}
+
+#conInfoCheckPage2{
+    float: right;
+    /* display: block; */
+    margin-right: 10px;
+}
+/* label{
+    display: block;
+} */
+/* .checkoutFormContactPart1{
+    border: 1px solid red;
+} */
+
+/* .checkoutFormContactPart2{
+    border: 1px solid blue;
+} */
+
+input{
+    display: block;
+    width: 98%;
+    height: 40px;
+    margin: 10px 10px 10px 0px;
+    /* border: 1px solid red; */
+    /* border-radius: 5px; */
+}
+
+select{
+    display: block;
+    width: 99%;
+    height: 47px;
+    margin: 10px 10px 10px 0px;
+}
+#saveInfoCheckbox, #getOrderOnWhatsapp{
+    width: 6%;
+    display: inline;
+    height: 16px;
+    /* margin: 10px 10px 10px 0px; */
+}
+.loginSpan{
+   color: #a17c5e; 
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.nameDiv, .pincityDiv{
+    display: flex;
+}
+.cToShipping{
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 50%; */
+    height: 100px;
+    align-items: center;
+}
+.cToShippingDiv1, .cToShippingDiv2{
+    /* float: right; */
+    width: 50%;
+}
+.cToShippingDiv2 > button{
+    float: right;
+    border: 1px solid #383636;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #383636;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cToShippingDiv2 > button:hover{
+    background-color: black;
+}
+.checkoutRights{
+    border-top: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+#checkoutProuctDetails{
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 30px;
+}
+.checkProductCard{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    height: 21%;
+    margin-top: 15px;
+}
+
+.checkImg{
+    width: 15%;
+    /* border: 1px solid red; */
+    margin-left: 25px;
+}
+.checkImg>img{
+    width: 100%;
+    border-radius: 7px;
+}
+.checkDesc{
+    width: 52%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.checkDesc>span{
+    display: block;
+    font-size: 17px;
+}
+.checkDesc>span:nth-child(1){
+    font-size: 17px;
+    font-weight: bold;
+}
+.checkDesc>span:nth-child(2){
+    font-size: 15px;
+}
+.checkPrice{
+    width: 26%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.checkoutProuduct > div{
+    /* border: 1px solid red; */
+    border-top: 1px solid #e6e6e6;
+    height: 100px;
+}
+.checkoutCoupon{
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+    
+}
+/* .checkoutCoupon > div{
+    border: 1px solid black;
+} */
+.checkoutCoupon > div > button{
+    padding: 16px;
+    width: 100%;
+    border: 0.5px solid ;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    background-color: #c8c8c8;
+    cursor: pointer;
+}
+.checkoutSubtoal, .checkoutTotal{
+    /* display: grid; */
+    display: flex;
+
+    /* grid-template-columns: 50% 50%; */
+}
+
+.checkoutSubtoal > div{
+    width: 50%;
+    height: 200px;
+
+    
+}
+.checkoutTextDirecton{
+    text-align: right;
+}
+.checkoutTotal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#checkoutTotalAmount{
+    text-align: right;
+    /* border: 1px solid red; */
+    float: right;
+
+}
+#checkoutTotalAmount > div > span{
+    font-size: 29px;
+    text-align: right;
+    line-height: 0px;
+}

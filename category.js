@@ -3,7 +3,7 @@
 
 // ------------Importing functions----------------
 import { navbar, footer } from "/components/navbar.js";
-import { appendCart } from "/scripts/cart.js";
+import { appendCart, setPayDetail } from "/scripts/cart.js";
 import { cartComp } from "/components/cart.js";
 import { setDataToLocal } from "/scripts/data.js";
 
@@ -253,6 +253,10 @@ document.querySelector("#sortList>ul>li:nth-child(1)").addEventListener("click",
 document.querySelector("#sortList>ul>li:nth-child(2)").addEventListener("click", zToaSort);
 document.querySelector("#sortList>ul>li:nth-child(3)").addEventListener("click", lowSort);
 document.querySelector("#sortList>ul>li:nth-child(4)").addEventListener("click", highSort);
+
+
+
+
 // appending rating stars
 
 // let ratingSpan = document.createElement("span");
