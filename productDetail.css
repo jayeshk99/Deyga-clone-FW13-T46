@@ -5,11 +5,11 @@
 
 body {
   font-family: "Carter Sans", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400;
   font-style: normal;
   color: #454545;
   background: #fff;
-  line-height: 1.65;
+   */
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -20,22 +20,41 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
+#path {
+  /* position: relative; */
+  height: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3%;
+  /* justify-content: center; */
+}
+.linkPath {
+  text-decoration: none;
+  color: #454545;
+}
+#pathDiv {
+  margin-bottom: 5%;
+  margin-left: 3%;
+  text-decoration: none;
+}
 #productDetailContainer {
   display: flex;
-  width: 100%;
-  height: 800px;
+  width: 90%;
+  margin: auto;
+  gap: 7%;
+  /* height: 900px; */
   position: relative;
-  top: 180px;
+  border-bottom: 1px solid #454545;
 }
 #productImageContainer {
-  width: 40%;
-  height: 90%;
-  padding: 0 6%;
+  width: 47%;
+  height: 80%;
+  margin-left: 3%;
+  margin-bottom: 20px;
 }
 #productDescriptionContainer {
-  width: 50%;
-  height: 90%;
+  width: 45%;
+  height: 80%;
 }
 #productImgMain {
   width: 100%;
@@ -67,6 +86,7 @@ body {
 #productTitle {
   font-size: 1.5rem;
   padding: 0;
+  line-height: 2;
 }
 .checked {
   color: #ffd200;
@@ -81,10 +101,16 @@ body {
   font-style: normal;
   color: #454545;
 }
+#productPriceDiv {
+  margin-top: 5%;
+}
 #productPrice {
   font-size: 23px;
   font-weight: 600;
   color: #9d9d9d;
+}
+#productSizeDiv {
+  margin-top: 5%;
 }
 #sizeType {
   border: 1px solid;
@@ -95,28 +121,31 @@ body {
   margin-top: -50;
 }
 #productQuantityDiv {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 #quantityDiv {
   border: 1px solid #e3e3e3;
-  width: 12%;
-  padding: 1%;
+  width: 20%;
+  padding: 0.5%;
   display: flex;
-  white-space: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
+  margin-top: 2%;
+  cursor: pointer;
 }
 .paraGreen {
+  margin-top: 7%;
   color: green;
 }
 .addToCartBtn {
-  padding: 20px 50px;
+  padding: 15px 50px;
   width: 80%;
   border: none;
   border: 1px solid black;
   background-color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .addToCart-hover-underline-animation {
@@ -178,7 +207,7 @@ body {
   transform-origin: bottom right;
 }
 #buyItNowBtn {
-  padding: 20px 50px;
+  padding: 15px 50px;
   width: 80%;
   border: none;
   border: 1px solid #e3e3e3;
@@ -186,6 +215,7 @@ body {
   color: white;
   font-weight: 600;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .buyItNowBtnhover-underline-animation {
@@ -206,7 +236,7 @@ body {
   left: 0;
   padding: 0;
   background-color: white;
-  color: black;
+  color: #9d9d9d;
   transform-origin: bottom left;
   transition: transform 0.4s ease-out;
 }
@@ -220,7 +250,6 @@ body {
 #naturalImgDiv {
   height: 13%;
   width: 80%;
-  background-color: tomato;
 }
 #naturalImg {
   height: 100%;
@@ -245,4 +274,7 @@ body {
 #showDesc {
   border: 1px solid #e3e3e3;
   width: 75%;
+}
+#showDescImg {
+  width: 100%;
 }
