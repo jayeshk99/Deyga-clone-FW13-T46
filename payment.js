@@ -1,58 +1,43 @@
-var payData = JSON.parse(localStorage.getItem("cartPricing"));
+var payData = JSON.parse(localStorage.getItem("paymentDetail"));
+
 console.log(payData);
 document.querySelector(
   ".box2>div:nth-child(1)"
-).innerHTML = `₹ ${payData.totalPrice}`;
+).innerHTML = `₹ ${payData.subTotal}`;
 document.querySelector(
   ".box2>div:nth-child(2)"
-).innerHTML = `₹ ${payData.finalTotal}`;
+).innerHTML = `₹ ${payData.discount}`;
 document.querySelector(
   ".box2>div:nth-child(3)"
-).innerHTML = `₹ ${payData.totalDisc}`;
+).innerHTML = `₹ ${payData.shippingCharges}`;
+console.log(`₹ ${payData.shippingCharges}`);
 document.querySelector(
   ".box2>div:nth-child(4)"
-).innerHTML = `₹ ${payData.shippingCharge}`;
-document.querySelector(
-  ".box2>div:nth-child(5)"
-).innerHTML = `₹ ${payData.finalPay}`;
-if (payData.couponDisc > 0) {
-  payData.finalPay =
-    payData.finalPay -
-    Math.floor(payData.finalPay * (payData.couponDisc / 100));
-  document.querySelector(
-    ".box2>div:nth-child(5)"
-  ).innerHTML = `₹ ${payData.finalPay}`;
-  document.querySelector(
-    ".box1>div:nth-child(6)"
-  ).innerHTML = `<div style="font-size:20px;">Grand Total   <div style="font-size:13px; font-weight:bold; color:green; display:block;">Applied ${payData.couponDisc}% off</div></div>`;
-}
+).innerHTML = `₹ ${payData.grandTotal}`;
 
 // Showing shipping details
 
-var addData = JSON.parse(localStorage.getItem("addressData"));
-console.log(addData);
-document.querySelector("#shippingInfo > h5").textContent = addData.fullName;
-document.querySelector("#shippingInfo > h6").textContent = addData.mobNo;
+var addData = JSON.parse(localStorage.getItem("shippingDetails"));
+// console.log(addData);
+document.querySelector("#shippingInfo > h5").textContent = addData.fistName;
+document.querySelector("#shippingInfo > h6").textContent = addData.number;
 var addDiv = document.querySelector("#shippingInfo > p");
 addDiv.textContent =
-  addData.country +
-  "  " +
-  addData.addLine1 +
-  " " +
-  addData.addLine2 +
-  addData.pin;
+  addData.country + " " + addData.address + " " + addData.pin;
 
 // Pay now button function
 document.getElementById("payNow").addEventListener("click", function () {
   document.querySelector(".credit-container1").style.display = "none";
   document.getElementById("orderPlaced").style.display = "block";
   document.querySelector(".credit-container").style.display = "none";
+  document.querySelector(".credit-container2").style.display = "none";
   document.querySelector(".payT").textContent = "";
+  document.querySelector(".containerPay").style.marginLeft = "0";
 });
 //continue shopping button
 document
   .querySelector("#orderPlaced>*:nth-child(4)")
   .addEventListener("click", function () {
     localStorage.removeItem("nykaaCartDataNew");
-    window.location.href = "women.html";
+    window.location.href = "index.html";
   });

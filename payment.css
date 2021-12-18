@@ -17,13 +17,14 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 0% 12% 0% 12%;
   box-sizing: border-box;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .logodiv {
   height: 100%;
   width: 85px;
-  justify-content: center;
+  margin: auto;
+  /* justify-content: center; */
 }
 #logoImgPay {
   width: 100%;
@@ -103,22 +104,30 @@ body {
   padding-left: 30px;
   width: 280px;
   height: 250px;
+  /* border: 1px solid blue; */
 }
 .box1 > div {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .box2 > div {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .box1 > div:nth-child(5) {
-  margin-top: 45px;
+  margin-top: 25px;
+  font-weight: 900;
 }
 .box2 {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 50px;
   width: 150px;
-  height: 210px;
+  height: 200px;
+  /* border: 1px solid red; */
+}
+.box2 > div:nth-child(4) {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
 }
 .Sbox2 {
   width: 350px;
@@ -208,12 +217,12 @@ body {
 #Scolor {
   color: grey;
 }
-
 #orderPlaced {
   display: none;
-  width: 450px;
+  width: 40%;
   height: 255px;
-  margin-left: 10px;
+  /* margin-left: 25%; */
+  margin: auto;
   border: 1px solid lightgrey;
   text-align: center;
   color: green;
