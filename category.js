@@ -3,7 +3,7 @@
 
 // ------------Importing functions----------------
 import { navbar, footer } from "/components/navbar.js";
-import { appendCart, setPayDetail } from "/scripts/cart.js";
+import { appendCart } from "/scripts/cart.js";
 import { cartComp } from "/components/cart.js";
 import { setDataToLocal } from "/scripts/data.js";
 
@@ -255,8 +255,12 @@ document.querySelector("#sortList>ul>li:nth-child(3)").addEventListener("click",
 document.querySelector("#sortList>ul>li:nth-child(4)").addEventListener("click", highSort);
 
 
-
-
+// updating cart items value in navbar
+let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length;
+console.log(cartitemsNo);
+let cartLengthShow = document.querySelector(".dropdown+li>p>b");
+console.log(cartLengthShow)
+cartLengthShow.innerText = `Cart (${cartitemsNo})`;
 // appending rating stars
 
 // let ratingSpan = document.createElement("span");

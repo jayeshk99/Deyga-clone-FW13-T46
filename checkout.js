@@ -1,5 +1,5 @@
 let data = JSON.parse(localStorage.getItem("cartData"));
-let couponFlag = JSON.parse(localStorage.getItem("couponFlag")) || false;
+let couponFlag = false;
 console.log(data)
 function appendCheckout(data) {
     let totalPrice = 0;
@@ -77,4 +77,5 @@ continueBtn.addEventListener("click", () => {
     };
     localStorage.setItem("shippingDetails", JSON.stringify(shippingDetails));
 
+    window.location.href = "payment.html";
 })

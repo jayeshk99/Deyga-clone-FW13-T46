@@ -12,9 +12,9 @@
     }
     header {
       /* background-color: red; */
-    border-bottom: 1px solid rgb(202, 127, 127);
+    border-bottom: 1px solid rgb(185, 185, 185);
     height: 182px;
-
+    width: 100%;
     position: fixed;
     margin: 0;
     z-index: 10;
@@ -51,6 +51,21 @@
     .header-lists ul li{
     margin: 0px 16px;
     }
+    .mb-account{
+      display: none;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      padding: 0px 40px;
+      }
+      .mb-account div{
+      width: 50%;
+      }
+ .mb-header-lists{
+      display: none;
+      padding: 0px 40px;
+      }
     .account{
     display: flex;
     justify-content: space-between;

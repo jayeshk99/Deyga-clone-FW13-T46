@@ -8,17 +8,24 @@
     margin: 0;
     padding: 0px;
     color: #28282b;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    }
+    .blackBox::placeholder{
+      color: black !important;
     }
     header {
       /* background-color: red; */
-    border-bottom: 1px solid rgb(202, 127, 127);
     height: 182px;
 
     position: fixed;
     margin: 0;
     z-index: 10;
     transition: ease 0.3s;
+
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    width: 100%;
     }
     header ul{
     list-style: none;
@@ -277,7 +284,7 @@
 }
 
 
-header{
+/* header{
     background-color: transparent;
     position: relative;
     color: white;
@@ -285,7 +292,7 @@ header{
     height: 182px;
     z-index: 99;
     width: 100%;
-    }
+    } */
     .menu a{
     color: white;
     }
