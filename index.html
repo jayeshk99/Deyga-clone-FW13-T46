@@ -1240,6 +1240,32 @@ document.getElementById("logout").addEventListener("click",function(){
     localStorage.setItem("loginUser",JSON.stringify(currUser));
     window.location.href = "loginpage.html";
 })
+
+// category click function
+document.querySelector(".menu>ul>li:nth-child(1)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("skinCare"));
+})
+document.querySelector(".menu>ul>li:nth-child(2)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("hairCareData"));
+})
+document.querySelector(".menu>ul>li:nth-child(3)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("bathBody"));
+})
+document.querySelector(".menu>ul>li:nth-child(4)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("OralCare"));
+})
+document.querySelector(".menu>ul>li:nth-child(5)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("wellNess"));
+})
+document.querySelector(".menu>ul>li:nth-child(6)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("babyCareProduct"));
+})
+document.querySelector(".menu>ul>li:nth-child(7)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("menProduct"));
+})
+document.querySelector(".menu>ul>li:nth-child(8)").addEventListener("click",()=>{
+    localStorage.setItem("clickedCategory",JSON.stringify("comboProduct"));
+})
 </script>
 
 <script>   

@@ -90,7 +90,7 @@ let navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Hair Care</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Hair Care</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>Hair Care</li>
@@ -102,7 +102,7 @@ let navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Bath & Body</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Bath & Body</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>HandMade Soap</li>
@@ -114,7 +114,7 @@ let navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Oral Care</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Oral Care</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>Tooth Powder</li>
@@ -122,7 +122,7 @@ let navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Wellness</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Wellness</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>Cold Pressed Oil</li>
@@ -131,7 +131,7 @@ let navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Baby Care</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Baby Care</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>Baby Soap</li>
@@ -141,7 +141,7 @@ let navbar = () => {
                                     </ul>
                                     </div>
                                     </li>
-                                    <li class="dropdown hover-underline-animation1"><a href="#"> Men</a>
+                                    <li class="dropdown hover-underline-animation1"><a href="category.html"> Men</a>
                                         <div class="dropdown-content">
                                             <ul>
                                                 <li>Men Bath Soap</li>
@@ -151,7 +151,7 @@ let navbar = () => {
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="dropdown hover-underline-animation1"><a href="#"> Combo</a>
+                                    <li class="dropdown hover-underline-animation1"><a href="category.html"> Combo</a>
                                         </li>
                 <li class="dropdown hover-underline-animation1"><a href="#"> Gifting</a>
                     <div class="dropdown-content">
