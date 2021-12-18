@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0px;
     color: #28282b;
+    /* overflow-x: hidden; */
     }
     header {
       /* background-color: red; */
@@ -29,7 +30,7 @@
     }
     .header-wrapper{
     margin: auto;
-    max-width: 1500px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +67,7 @@
     }
     #submenu ul li{
     margin: 0px 5px;
+    cursor: pointer;
     }
 
     #header-help-img{
@@ -87,6 +89,10 @@
     font-family: 'Cartner Sans W01';
     padding: 10px;
     width: 95%;
+    background-color: transparent;
+    }
+    #search::placeholder{
+      color: black;
     }
     input:focus{
     outline: none;
@@ -100,6 +106,7 @@
     margin-left: 0px;
     margin-top:25px ;
     cursor: pointer;
+    color: black;
     }
     .menu>ul{
     display: flex;
@@ -109,16 +116,46 @@
     }
     .menu li{
     padding-bottom: 20px;
+    cursor: pointer;
     }
+   
     .menu a{
     text-decoration: none;
-    color: #28282b;
-    font-size: 15px;
+    color: black;
+    font-size: 16px;
     padding-bottom: 8px;
     }
     .dropdown {
     position: relative;
     display: inline-block;
+    }
+
+    .tooltip {
+      display: inline;
+      position: relative;
+    }
+    .tooltip:hover:after{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      background: #444;
+      border-radius: 8px;
+      color: #fff;
+      content: attr(title);
+      margin: -82px auto 0;
+      font-size: 16px;
+      padding: 13px;
+      width: 220px;
+    }
+    .tooltip:hover:before{
+      border: solid;
+      border-color: #444 transparent;
+      border-width: 12px 6px 0 6px;
+      content: "";
+      left: 45%;
+      bottom: 30px;
+      position: absolute;
     }
 
     .dropdown-content {
@@ -135,10 +172,61 @@
     font-weight: 700;
     animation: fadeIn 0.2s ease-in both;
     }
+    .dropdown-content-account {
+      display: none;
+      padding-top:10px;
+      position: absolute;
+      margin-top: 10px;
+      background-color: white;
+      border: 1px solid rgb(226, 226, 226);
+      min-width: 120px;
+      z-index: 1;
+      opacity: 0;
+      font-size: 14px;
+      font-weight: 700;
+      animation: fadeIn 0.2s ease-in both;
+      color : black;
+      margin-left: -36px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .dropdown-content-account:before{
+        border: solid;
+        border-color: white transparent;
+        border-width: 0px 9px 13px 9px;
+        content: "";
+        top:0;
+        left: 45%;
+        margin-top: -13px;
+        position: absolute;
+      }
+    .dropdown-content ul{
+      padding: 0px 15px;
+    }
+    #dropdown-content-account ul{
+      display: block;
+      padding: 0px 10px;
+      padding-bottom: 13px;
+    }
+    #dropdown-content-account ul li{
+      display: block;
+      padding: 5px 0px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    #dropdown-content-account a{
+     text-decoration: none;
+     color: black;
+    }
+    #dropdown-content-account li:hover{
+      color: grey;
+      border-bottom: 1px solid grey;
+     }
+    .dropdown-content ul li:hover{
+      color: grey;
+    }
     .dropdown:hover .dropdown-content {display: block;}
-    /* .menu>ul>li:hover{
-    border-bottom: 2px solid black;
-    } */
+    .dropdown:hover .dropdown-content-account {display: block;}
     @keyframes fadeIn {
         from {
         opacity: 0;

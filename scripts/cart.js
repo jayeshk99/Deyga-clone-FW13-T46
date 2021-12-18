@@ -12,6 +12,16 @@ function appendCart() {
         let showCartProduct = document.getElementById("showCartProduct");
         showCartProduct.innerHTML = "";
 
+        function cartPricing() {
+            let totalPrice = 0;
+            for (let i = 0; i < cartData.length; i++) {
+                totalPrice += cartData[i].price * cartData[i].productQuantity;
+            }
+
+            let checkoutBtn = document.querySelector("#showCartBottom>button>span:nth-child(3)");
+            checkoutBtn.innerText = `  Rs. ${totalPrice} `;
+        }
+        cartPricing();
         cartData.forEach((el) => {
 
             let showCartProduct = document.getElementById("showCartProduct");
@@ -47,6 +57,8 @@ function appendCart() {
                     el.productQuantity -= 1;
                     qtyShowSpan.innerText = el.productQuantity;
                     console.log(cartData)
+                    localStorage.setItem("cartData", JSON.stringify(cartData));
+                    cartPricing();
                 }
             });
             let increaseQty = document.createElement("span");
@@ -55,6 +67,8 @@ function appendCart() {
             increaseQty.addEventListener("click", () => {
                 el.productQuantity += 1;
                 qtyShowSpan.innerText = el.productQuantity;
+                localStorage.setItem("cartData", JSON.stringify(cartData));
+                cartPricing();
 
             });
             qtySpan.append(reduceQty, qtyShowSpan, increaseQty)
@@ -66,13 +80,7 @@ function appendCart() {
             cartProductCard.append(cartProductImg, cartProductDetails);
             showCartProduct.append(cartProductCard);
         })
-        let totalPrice = 0;
-        for (let i = 0; i < cartData.length; i++) {
-            totalPrice += cartData[i].price;
-        }
 
-        let checkoutBtn = document.querySelector("#showCartBottom>button>span:nth-child(3)");
-        checkoutBtn.innerText = `Rs.${totalPrice} `;
     }
 }
 
