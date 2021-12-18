@@ -51,7 +51,8 @@
     }
     .header-lists ul li{
     margin: 0px 16px;
-    }   .mb-header-lists{
+    }   
+    .mb-header-lists{
       display: none;
       padding: 0px 40px;
       }
