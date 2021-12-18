@@ -22,7 +22,7 @@ function appendCart() {
             checkoutBtn.innerText = `  Rs. ${totalPrice} `;
         }
         cartPricing();
-        cartData.forEach((el) => {
+        cartData.map((el, index) => {
 
             let showCartProduct = document.getElementById("showCartProduct");
 
@@ -71,7 +71,17 @@ function appendCart() {
                 cartPricing();
 
             });
-            qtySpan.append(reduceQty, qtyShowSpan, increaseQty)
+            let removeBtnSpan = document.createElement("span");
+            removeBtnSpan.setAttribute("class", "cartItemRemove");
+            removeBtnSpan.innerText = "Remove";
+            removeBtnSpan.style.textDecoration = "underline";
+            removeBtnSpan.addEventListener("click", () => {
+                cartData.splice(index, 1);
+                localStorage.setItem("cartData", JSON.stringify(cartData));
+                appendCart();
+            })
+
+            qtySpan.append(reduceQty, qtyShowSpan, increaseQty, removeBtnSpan)
 
 
             cartProductDetails.append(nameSpan, priceSpan, qtySpan);
@@ -82,6 +92,32 @@ function appendCart() {
         })
 
     }
+    document.querySelector("#showCartBottom>button").addEventListener("click", () => {
+        let totalPrice = 0;
+        for (let i = 0; i < cartData.length; i++) {
+            totalPrice += cartData[i].price * cartData[i].productQuantity;
+        }
+        let shippingCharges;
+        if (totalPrice > 1000) {
+            shippingCharges = 0;
+        } else { shippingCharges = 70; }
+        let paymentDetail = {
+            subTotal: totalPrice,
+            discount: 0,
+            shippingCharges: shippingCharges,
+            grandTotal: totalPrice + shippingCharges,
+        }
+        console.log(paymentDetail)
+        localStorage.setItem("paymentDetail", JSON.stringify(paymentDetail))
+        window.location.href = "checkout.html";
+
+    })
+
+
 }
 
-export { appendCart };
+function setPayDetail() {
+    // localStorage.setItem("cartData", JSON.stringify(cartData));
+
+}
+export { appendCart, setPayDetail };

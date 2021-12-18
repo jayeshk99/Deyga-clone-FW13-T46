@@ -1,10 +1,10 @@
 body {
-    font-family: "Carter Sans", sans-serif;
+    /* font-family: "Carter Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #454545;
     background: #fff;
-    line-height: 1.65;
+    line-height: 1.65; */
 }
 
 html {
@@ -18,9 +18,10 @@ html {
 }
 
 #sp-container {
-
+    position: relative;
     width: 100%;
-
+    top: 182px;
+    /* padding-top: 182px; */
 }
 
 #search-modal-container {
@@ -310,4 +311,7 @@ a:-webkit-any-ac-link {
 }
 .ac-link--secondary:hover{
     color: #9d9d9d;
+}
+footer{
+    margin-top: 100px;
 }
