@@ -49,6 +49,7 @@ function enableBodyScroll() {
 // -------------for cart---------------------
 let cartBtn = document.querySelector("#submenu>ul>li:nth-child(2)");
 cartBtn.addEventListener("click", () => {
+  document.getElementById("cart").style.display = "block";
   window.scrollTo(0, 0);
   appendCart();
   document.getElementById("cart").style.marginLeft = "0%";
