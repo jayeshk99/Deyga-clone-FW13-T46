@@ -1,5 +1,5 @@
 //Function for exporting navbar component
-let navbar = ()=>{
+let navbar = () => {
     return `
     <div class="header-wrapper">
     <div class="header-left-div">
@@ -50,9 +50,9 @@ let navbar = ()=>{
                         <p><b>Account</b></p>
                         <div class="dropdown-content-account" id="dropdown-content-account">
                                 <ul>
-                                    <li><a href="#">Login</a></li>
+                                    <li><a href="loginpage.html">Login</a></li>
                                     <li>Track Order</li>
-                                    <li><a href="#">Signup</a> </li>
+                                    <li><a href="signup.html">Signup</a> </li>
                                 </ul>
                             </div>
                     </li>
@@ -70,7 +70,7 @@ let navbar = ()=>{
             <nav>
                 <div class="menu">
                     <ul>
-                        <li class="dropdown hover-underline-animation1"><a href="#"> Skin Care</a>
+                        <li class="dropdown hover-underline-animation1"><a href="category.html"> Skin Care</a>
                             <div class="dropdown-content">
                                 <ul>
                                     <li>Face Mask(Gel)</li>
@@ -167,7 +167,7 @@ let navbar = ()=>{
     `;
 }
 
-let footer = ()=>{
+let footer = () => {
     return `
     <div class="footer-wrapper">
     <h1>We ❤️ Being Friends</h1>
@@ -224,4 +224,4 @@ let footer = ()=>{
 </div>
     `;
 }
-export  {navbar,footer};
+export { navbar, footer };

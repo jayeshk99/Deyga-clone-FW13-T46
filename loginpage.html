@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+    <header id="navbar">
+
+    </header>
+    <div id="sp-container">
+        <div id="search-modal-container">
+            <div id="empty"></div>
+            <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                <ol>
+                    <li>
+                        <a href="/" title="Home" style="color: black;">Home</a>
+                    </li>
+                    <li aria-current="page">
+                        <a href="loginpage.html" aria-current="page">Account</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+        <div id="sign-container-div">
+            <div id="form-div">
+                <form action="/account" id="create_customer">
+                    <div class="form-header">
+                        <h1 class="u-h1">login</h1>
+                        <div class="oxi-social-login"><iframe id="social_login_frame" title="Social Login Frame"
+                                src="https://social-login.oxiapps.com/widget?site=deyga-in.myshopify.com&amp;vt=928391&amp;parenturl=https://deyga.in/account/register"
+                                style="width:100%;max-width:100%;padding-top:0px;margin-bottom:5px;border:0px;height:96px;"
+                                scrolling="no"></iframe></div>
+                        <p class="form-legend">Please enter your e-mail and password:</p>
+                    </div>
+
+
+                    <div class="form-imput-div">
+                        <input type="email" id="email" class="form-input" name="customer[email]" aria-label="Email"
+                            placeholder="Email" required="required">
+                        <label class="form-input-lable">Email</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="password" id="password" class="form-input" name="customer[password]"
+                            aria-label="Password" placeholder="Password" required="required" aria-autocomplete="list">
+                        <label class="form-input-lable">Password</label>
+                        <button type="button" onclick="recoverPassword()" class="form-input-ac-link ac-link"
+                            data-action="toggle-recover-form">Forgot
+                            password?</button>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                    <div class="Form__Hint Form__Hint--center">
+                        <span class="Text--subdued">Don't have an account?</span>
+                        <a href="signup.html" class="ac-link ac-link--secondary">Create one</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    const recoverPassword = () => {
+        window.location.href = "recover.html";
+    }
+    document.querySelector(".login-btn").addEventListener('click', login);
+    var regdUsers = JSON.parse(localStorage.getItem("userData"));
+    console.log(regdUsers)
+
+    function login(e) {
+        e.preventDefault()
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+
+        if (email == "papa@123" && pass == "neeraj") {
+            window.location.href = "admin.html"
+            alert("login successful");
+        } else {
+            for (var i = 0; i < regdUsers.length; i++) {
+                if (
+                    regdUsers[i].email == email &&
+                    regdUsers[i].passWord == pass
+                ) {
+
+                    alert("login successful");
+                    window.location.href = "index.html";
+                    break;
+                } else {
+                    alert("Wrong email or password")
+                    break;
+                }
+            }
+        }
+
+    }
+</script>
+<script type="module">
+    import { navbar, footer } from "./components/navbar.js";
+    let header = document.querySelector("header");
+    let footerhtml = document.querySelector("footer");
+    header.innerHTML = navbar();
+    footerhtml.innerHTML = footer();
+
+</script>

@@ -416,6 +416,714 @@ let productData = [
     productQuantity: 1,
   },
 ];
+
+//baby care product
+
+let babyCareProduct = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Baby_Soap_700x.jpg?v=1565679776",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_160x.png?v=1565679776",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_9_700x.jpg?v=1565679776",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_10_700x.jpg?v=1565679776",
+      
+    ],
+
+    productName: "Baby Bath Bar ",
+    productRating: 5,
+    totalReview: 6,
+    price: 289,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9757_700x.jpg?v=1609840865",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-10_160x.jpg?v=1609840865",
+    ],
+
+    productName: "Babycare Combo ",
+    productRating: 5,
+    totalReview: 8,
+    price: 849,
+    productSize: "100g",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03129_1000x1000_5e407b4a-7f58-491e-be9a-f6074250b127_700x.jpg?v=1629347669",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/BABAY_160x.jpg?v=1629347669",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/BabyTalkFree_600x_fe69e7fe-ffb5-4852-b52e-82636091f20e_160x.jpg?v=1629347661",
+    ],
+
+    productName: "Baby Powder (Talc Free)",
+    productRating: 4,
+    totalReview: 1,
+    price: 479,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02015_1000x1000_116db7e5-4aa5-45a9-b2db-bb32fb8851ce_700x.jpg?v=1629296390",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/30A0183_160x.jpg?v=1629296390",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/baby__butter_160x.png?v=1629296390",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/30A0198_160x.jpg?v=1629296390",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/30A0203_160x.jpg?v=1629296312",
+    ],
+
+    productName: "Baby Butter",
+    productRating: 5,
+    totalReview: 5,
+    price: 439,
+    productSize: "100g",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03124_700x.jpg?v=1623384266",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/BO_160x.jpg?v=1623384266",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/babyMassageoil_160x.jpg?v=1623384266",
+    ],
+
+    productName: "Baby Massage Oil 250ml",
+    productRating: 1,
+    totalReview: 51,
+    price: 919,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Group-1000px_6_700x.jpg?v=1547118816",
+      
+    ],
+
+    productName: "Baby Care Kit",
+    productRating: 2,
+    totalReview: 1,
+    price: 2,379,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+]
+
+// Men product
+let menProduct = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07974_1_700x.jpg?v=1609860890",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Charcoal_Soap.mp4?v=1632132862",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_1_700x.jpg?v=1632144261",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_3_700x.jpg?v=1609860890",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_4_160x.jpg?v=1609860890",
+      
+    ],
+
+    productName: "Charcoal Bath Bar ",
+    productRating: 5,
+    totalReview: 665,
+    price: 389,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02061_700x.jpg?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-5_160x.png?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Mustache_Beardoil_160x.jpg?v=1623388287",
+    ],
+
+    productName: "Mustache and Beard Oil",
+    productRating: 5,
+    totalReview: 3,
+    price: 469,
+    productSize: "100g",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_6_700x.jpg?v=1624294260",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/files/hair_1000_prod.mp4?v=1624293862",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2020-11-07at8.30.14PM_700x.jpg?v=1624294260",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/HairGrowthOil100ml_160x.jpg?v=1624294260",
+    ],
+
+    productName: "Hair Growth Oil",
+    productRating: 4,
+    totalReview: 253,
+    price: 509,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Group-1000px_2_700x.jpg?v=1547117905",
+    ],
+
+    productName: "Men's Kit",
+    productRating: 5,
+    totalReview: 5,
+    price: 1,999,
+    productSize: "1 unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03157_df108c3c-a3e6-4638-9e05-e5d8ee3f8cf4_700x.jpg?v=1609388148",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_15_b500a4d3-69b0-40bf-9806-9beab343fd3b_160x.jpg?v=1609388160",
+      
+    ],
+
+    productName: "Coconut Milk Shampoo Bar",
+    productRating: 4,
+    totalReview: 51,
+    price: 299,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07968_700x.jpg?v=1623384929",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_9_160x.jpg?v=1623384929",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/deyga_organics_50615103_312177679427359_3347923219407533453_n_160x.jpg?v=1623384929",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/CharcoalFAcePack_160x.jpg?v=1623384929",
+      
+    ],
+
+    productName: "Charcoal Face Pack 200G",
+    productRating: 4,
+    totalReview: 29,
+    price: 409,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP08445_700x.jpg?v=1623389294",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Shea_Butter_Lip_160x.jpg?v=1623389294",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Internal_Shea_Butter_160x.jpg?v=1623389294",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/SheaButter_160x.jpg?v=1623389294",
+      
+    ],
+
+    productName: "Shea Butter Lip Balm",
+    productRating: 4,
+    totalReview: 2,
+    price: 239,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07958_1000x1000_1afb2825-1ce7-4682-82d2-0cf3241dfef8_700x.jpg?v=1629347023",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MAN_6e32e2d0-6b09-44d9-a590-645b9f3c2193_160x.jpg?v=1629347023",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/ManPowder_1000x1000_e01c1511-c3ae-4f53-bdad-fdd88c77cc03_160x.jpg?v=1629347018",
+      
+    ],
+
+    productName: "Man Body Powder ",
+    productRating: 5,
+    totalReview: 4,
+    price: 479,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+]
+// combo product
+let comboProduct = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.07.53PM_700x.jpg?v=1613130415",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/1_1_160x.jpg?v=1613130415",
+      
+      
+    ],
+
+    productName: "Nourished Lips Combo ",
+    productRating: 5,
+    totalReview: 16,
+    price: 209,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.55.59PM_700x.jpg?v=1613130278",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/4_2a046bee-cc74-441c-8ae8-7e536ae4868e_160x.jpg?v=1613130278",
+      
+    ],
+
+    productName: "Acne Vanishing Combo",
+    productRating: 5,
+    totalReview: 3,
+    price: 1,109,
+    productSize: "100g",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9708_2_700x.jpg?v=1609840625",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-03_160x.jpg?v=1609840625",
+      
+    ],
+
+    productName: "Hair Strengthening Combo ",
+    productRating: 4,
+    totalReview: 12,
+    price: 639,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9742_1_700x.jpg?v=1609840741",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-07_160x.jpg?v=1609840741",
+    ],
+
+    productName: "Mini Foot Spa Combo",
+    productRating: 5,
+    totalReview: 1,
+    price: 999,
+    productSize: "1 unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_5_700x.jpg?v=1618674110",
+      
+      
+    ],
+
+    productName: "Summer Hydration Combo",
+    productRating: 4,
+    totalReview: 51,
+    price: 859,
+    productSize: "2 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2021-02-09at6.07.56PM_700x.jpg?v=1613130376",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/2_1_160x.jpg?v=1613130376",
+      
+      
+    ],
+
+    productName: "Face Care Essentials Combo",
+    productRating: 4,
+    totalReview: 29,
+    price: 949,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/MG_9713_2_700x.jpg?v=1609840468",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga-Combo-04_1_160x.jpg?v=1609840468",
+      
+      
+    ],
+
+    productName: "Healthy Glow Combo",
+    productRating: 4,
+    totalReview: 2,
+    price: 839,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Square_700x.jpg?v=1609417960",
+      
+      
+    ],
+
+    productName: "Best Sellers' Hamper",
+    productRating: 5,
+    totalReview: 4,
+    price: 2,759,
+    productSize: "1 Unit",
+    productQuantity: 1,
+  },
+]
+
+//hair care Data
+
+let hairCareData = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/WhatsAppImage2020-11-07at8.30.14PM_900x.jpg?v=1624294260",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_6_800x.jpg?v=1624294260",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/HairGrowthOil100ml_800x.jpg?v=1624294260",
+    ],
+
+    productName: "Hair Growth Oil",
+    productRating: 5,
+    totalReview: 340,
+    price: 600,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03157_df108c3c-a3e6-4638-9e05-e5d8ee3f8cf4_800x.jpg?v=1609388148",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_15_b500a4d3-69b0-40bf-9806-9beab343fd3b_800x.jpg?v=1609388160",
+    ],
+
+    productName: "Coconut Milk Shampoo Bar",
+    productRating: 5,
+    totalReview: 270,
+    price: 299,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02057_800x.jpg?v=1623385578",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-1_800x.jpg?v=1623385578",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/HairSerum_800x.jpg?v=1623385579",
+    ],
+
+    productName: "Hair Serum (Liquid Gold)",
+    productRating: 5,
+    totalReview: 156,
+    price: 679,
+    productSize: " 30ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03136_800x.jpg?v=1623384069",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_17_800x.jpg?v=1623384069",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/AntiDandruff100ml_800x.jpg?v=1623384070",
+    ],
+
+    productName: "Anti Dandruff Oil",
+    productRating: 5,
+    totalReview: 56,
+    price: 479,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02061_800x.jpg?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-5_800x.png?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Mustache_Beardoil_800x.jpg?v=1623388287",
+    ],
+
+    productName: "Mustache and Beard Oil",
+    productRating: 4,
+    totalReview: 5,
+    price: 469,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP01994_800x.jpg?v=1623388337",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-7_ab3f51e8-9c84-49ec-a2d6-4b40b8d3755d_800x.jpg?v=1623388337",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/NeemSeed_800x.jpg?v=1623388357",
+    ],
+
+    productName: "Neem Seed Oil",
+    productRating: 5,
+    totalReview: 86,
+    price: 219,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03153541_800x.jpg?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-4_681b30d1-34df-46b1-990b-90affdcfa957_700x.png?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Eyebrowgrowthoil_800x.jpg?v=1623385240",
+    ],
+
+    productName: "Eyebrow Growth Oil",
+    productRating: 4,
+    totalReview: 86,
+    price: 619,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP01996_900x.jpg?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-3_59abcff6-11c6-4e66-a93c-98c652588d8c_800x.png?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_af8c9765-09e3-487d-a4b1-7edb9ab15e00_800x.png?v=1597922214",
+    ],
+
+    productName: "Moringa Oil",
+    productRating: 4,
+    totalReview: 1,
+    price: 439,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+];
+
+
+//bath and Body data
+let bathBody = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07974_1_800x.jpg?v=1609860890",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Artboard_1_800x.jpg?v=1632144261",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_3_800x.jpg?v=1609860890",
+    ],
+
+    productName: "Charcoal Bath Bar",
+    productRating: 5,
+    totalReview: 615,
+    price: 309,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03157_df108c3c-a3e6-4638-9e05-e5d8ee3f8cf4_800x.jpg?v=1609388148",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03157_df108c3c-a3e6-4638-9e05-e5d8ee3f8cf4_800x.jpg?v=1609388148",
+    ],
+
+    productName: "Coconut Milk Shampoo Bar",
+    productRating: 5,
+    totalReview: 270,
+    price: 299,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Shoot_3_4_900x.jpg?v=1549258567",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Shoot_3_4_900x.jpg?v=1549258567",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/HairSerum_800x.jpg?v=1623385579",
+    ],
+
+    productName: "Loofah",
+    productRating: 5,
+    totalReview: 16,
+    price: 29,
+    productSize: "1Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_900x.png?v=1565679776",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Baby_Soap_800x.jpg?v=1565679776",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_9_800x.jpg?v=1565679776",
+    ],
+
+    productName: "Baby Bath Bar",
+    productRating: 4,
+    totalReview: 56,
+    price: 289,
+    productSize: "1Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02061_800x.jpg?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-5_800x.png?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Mustache_Beardoil_800x.jpg?v=1623388287",
+    ],
+
+    productName: "Mustache and Beard Oil",
+    productRating: 4,
+    totalReview: 5,
+    price: 469,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/3_900x.png?v=1565679357",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-2_65d7b04f-e4db-4c90-bd98-981abfaa6be6_800x.png?v=1565679357",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_7_800x.jpg?v=1565679357",
+    ],
+
+    productName: "Neem Seed Oil",
+    productRating: 5,
+    totalReview: 16,
+    price: 239,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03153541_800x.jpg?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-4_681b30d1-34df-46b1-990b-90affdcfa957_700x.png?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Eyebrowgrowthoil_800x.jpg?v=1623385240",
+    ],
+
+    productName: "Eyebrow Growth Oil",
+    productRating: 4,
+    totalReview: 86,
+    price: 619,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP01996_900x.jpg?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-3_59abcff6-11c6-4e66-a93c-98c652588d8c_800x.png?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_af8c9765-09e3-487d-a4b1-7edb9ab15e00_800x.png?v=1597922214",
+    ],
+
+    productName: "Moringa Oil",
+    productRating: 4,
+    totalReview: 1,
+    price: 439,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+];
+
+let OralCare = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP07970_1000x1000_7ddd7ae6-d0b8-4546-8caf-dc8cdbdcdefd_800x.jpg?v=1629293343",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-1_52a59948-2923-488b-872e-163468cf553a_800x.png?v=1629293343",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_3_800x.jpg?v=1629293343",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/CharcoalToothWhitening_1000x1000_9191189a-3ca6-435d-ac9d-12e249a4bce2_800x.jpg?v=1629293336",
+    ],
+
+    productName: "Charcoal Tooth Whitening Powder",
+    productRating: 4,
+    totalReview: 25,
+    price: 179,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/4_76708434-dcd3-4310-8bf4-72e6fa387bfb_900x.jpg?v=1584347583",
+    ],
+
+    productName: "Tooth brush",
+    productRating: 5,
+    totalReview: 5,
+    price: 99,
+    productSize: "1Unit",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP08349-2_1000x1000_a9d15a5d-b085-4972-8519-4b47f34e040f_800x.jpg?v=1629293489",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/11d_800x.jpg?v=1629293489",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/12d_800x.jpg?v=1629293489",
+    ],
+
+    productName: "Herbal Tooth & Gum Powder",
+    productRating: 5,
+    totalReview: 13,
+    price: 179,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+];
+
+let wellNess = [
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP01994_800x.jpg?v=1623388337",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-7_ab3f51e8-9c84-49ec-a2d6-4b40b8d3755d_800x.jpg?v=1623388337",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/NeemSeed_800x.jpg?v=1623388357",
+    ],
+
+    productName: "Neem Seed Oil",
+    productRating: 4,
+    totalReview: 53,
+    price: 279,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/5_800x.jpg?v=1623389187",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/21_800x.jpg?v=1623389187",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/RosehipSeedOil_800x.jpg?v=1623389188",
+    ],
+
+    productName: "Rosehip Seed Oil",
+    productRating: 5,
+    totalReview: 7,
+    price: 439,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02002_800x.jpg?v=1623390116",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Tumeric_800x.jpg?v=1623390116",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/TurmericEssentialOIl100ml_800x.jpg?v=1623390127",
+    ],
+
+    productName: "Turmeric Essential Oil",
+    productRating: 5,
+    totalReview: 1,
+    price: 279,
+    productSize: "10ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP02061_800x.jpg?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-5_800x.png?v=1623388286",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Mustache_Beardoil_800x.jpg?v=1623388287",
+    ],
+
+    productName: "Mustache and Beard Oil",
+    productRating: 4,
+    totalReview: 5,
+    price: 469,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/3_900x.png?v=1565679357",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-2_65d7b04f-e4db-4c90-bd98-981abfaa6be6_800x.png?v=1565679357",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Deyga_1000px_7_800x.jpg?v=1565679357",
+    ],
+
+    productName: "Neem Seed Oil",
+    productRating: 5,
+    totalReview: 16,
+    price: 239,
+    productSize: "1 Bar",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP03153541_800x.jpg?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-4_681b30d1-34df-46b1-990b-90affdcfa957_700x.png?v=1623385239",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Eyebrowgrowthoil_800x.jpg?v=1623385240",
+    ],
+
+    productName: "Eyebrow Growth Oil",
+    productRating: 4,
+    totalReview: 86,
+    price: 619,
+    productSize: "100ml",
+    productQuantity: 1,
+  },
+  {
+    productImgUrl2: [
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/YFP01996_900x.jpg?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-3_59abcff6-11c6-4e66-a93c-98c652588d8c_800x.png?v=1574789243",
+      "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/6_af8c9765-09e3-487d-a4b1-7edb9ab15e00_800x.png?v=1597922214",
+    ],
+
+    productName: "Moringa Oil",
+    productRating: 4,
+    totalReview: 1,
+    price: 439,
+    productSize: "30ml",
+    productQuantity: 1,
+  },
+];
 function setDataToLocal() {
   localStorage.setItem("productData", JSON.stringify(productData));
 }

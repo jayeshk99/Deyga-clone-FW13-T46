@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deyga CheckOut Page</title>
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+    <div class="checkoutPage">
+        <div class="contactDiv">
+            <div class="checkoutLogo">
+                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Deyga_-_Registered_Logo-01_140x@2x.png?v=1600239326"
+                    alt="">
+            </div>
+
+            <div class="checkoutForm">
+                <div class="checkoutFormContactPart1">
+                    <h2 id="conInfoCheckPage">Contact information</h2>
+                    <p id="conInfoCheckPage2">
+                        <span><a href="#" class="loginSpan"></a></span>
+                    </p>
+
+                    <!-- <label for="email">Email</label> -->
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required />
+
+                    <input type="checkbox" name="" id="getOrderOnWhatsapp" checked="checked" />
+                    <label for="">Get order updates on WhatsApp</label>
+                </div>
+
+                <div class="checkoutFormContactPart2">
+                    <label for="">
+                        <h2>Shipping address</h2>
+                    </label>
+
+                    <div class="nameDiv">
+                        <input type="text" placeholder="First name(optional)" />
+                        <input type="text" placeholder="Last name" />
+                    </div>
+
+                    <input type="text" placeholder="Address" id="address" />
+                    <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+                    <select name="" id="country" aria-placeholder="Country/region">
+                        <option value="India">India</option>
+                        <option value="United States">United States</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Barbaos">Barbaos</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Brunei">Brunei</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Russia">Russia</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+
+                    <div class="pincityDiv">
+                        <input type="number" placeholder="Pincode" />
+                        <input type="text" placeholder="City" />
+                    </div>
+
+                    <select name="" id="state">
+                        <option value="--">State</option>
+                        <option value="Andaman and Nicobar Islands">
+                            Andaman and Nicobar Islands
+                        </option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli">
+                            Dadra and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Dehli">Dehli</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangan">Telangan</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+
+                    <input type="number" name="" id="number" placeholder="Phone number for order updates" />
+                    <input type="number" name="" id="" placeholder="Alternate Mobile Number" />
+
+                    <input type="checkbox" id="saveInfoCheckbox" />
+                    <label for=""> Save this information for next time</label><br />
+                </div>
+
+                <div class="cToShipping">
+                    <div class="cToShippingDiv1 loginSpan">
+                        <p>&#60;
+                            Return to cart</p>
+                    </div>
+                    <div class="cToShippingDiv2"><button>Continue to shipping</button></div>
+                </div>
+                <div class="checkoutRights">
+                    All rights reserved deyga.in
+                </div>
+
+            </div>
+        </div>
+
+        <div class="checkoutProuduct">
+
+            <div id="checkoutProuctDetails">
+                <!-- <div class="checkProductCard">
+                    <div class="checkImg">
+                        <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitleddesign_7_600x.jpg?v=1623384450"
+                            alt="">
+                    </div>
+                    <div class="checkDesc">
+                        <span>Beautifying Serum</span>
+                        <span>1 Unit</span>
+                    </div>
+                    <div class="checkPrice">
+                        ₹ 1,656
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="checkoutCoupon">
+                <div><input type="text" name="" id="couponCode"></div>
+                <div><Button id="couponBtn">Apply</Button></div>
+            </div>
+
+            <div class="checkoutSubtoal">
+                <div>
+                    <p>Subtotal</p>
+                    <p>Shipping</p>
+                    <p>Discount</p>
+                </div>
+
+                <div class="checkoutTextDirecton">
+                    <p class="subTotal"></p>
+                    <p>₹ 0</p>
+                    <p>₹ 0</p>
+
+                </div>
+
+            </div>
+
+            <div class="checkoutTotal">
+                <div>
+                    <div>
+                        <p>.</p>
+                        <p>Grnad <span id="taxSpan"></span> Total</p>
+                    </div>
+                </div>
+
+                <div id="checkoutTotalAmount">
+                    <div>
+                        <p>&nbsp;</p>
+                        INR <span class="subTotal"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="checkout.js" type="module">
+
+</script>

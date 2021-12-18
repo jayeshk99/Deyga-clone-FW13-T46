@@ -18,7 +18,7 @@ function cartComp() {
         <div id="showCartBottom">
             <span>Add Order Note</span>
             <span>Shipping & taxes calculated at checkout</span>
-            <button><span>CHECKOUT</span> <span></span><span>  Rs. </span></button> </div>
+            <button><span>CHECKOUT &nbsp;</span><span>&#8226; &nbsp;</span><span>  Rs. </span></button> </div>
     </div>
     
 </div>`;

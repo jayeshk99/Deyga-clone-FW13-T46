@@ -112,6 +112,7 @@
     width: 15%;
     /* font-size: 20px; */
     padding: 6px;
+    cursor: pointer;
 }
 .qtyButton>span:nth-child(2){
 
@@ -122,6 +123,7 @@
     padding-top: 0px;
     padding-left: 15px;
 }
+
 #showCartBottom>span:nth-child(2){
     font-size: 12px;
     margin-bottom: 20px;

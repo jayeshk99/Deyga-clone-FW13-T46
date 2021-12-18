@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+    <header id="navbar">
+
+    </header>
+    <div id="sp-container">
+        <div id="search-modal-container">
+            <div id="empty"></div>
+            <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                <ol>
+                    <li>
+                        <a href="/" title="Home" style="color: black;">Home</a>
+                    </li>
+                    <li aria-current="page">
+                        <a href="/account/register" aria-current="page">Create Account</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+        <div id="sign-container-div">
+            <div id="form-div">
+                <form action="/account" id="create_customer">
+                    <div class="form-header">
+                        <h1 class="u-h1">Register</h1>
+                        <div class="oxi-social-login"><iframe id="social_login_frame" title="Social Login Frame"
+                                src="https://social-login.oxiapps.com/widget?site=deyga-in.myshopify.com&amp;vt=928391&amp;parenturl=https://deyga.in/account/register"
+                                style="width:100%;max-width:100%;padding-top:0px;margin-bottom:5px;border:0px;height:96px;"
+                                scrolling="no"></iframe></div>
+                        <p class="form-legend">Please fill in the information below:</p>
+                    </div>
+                    <div class="form-imput-div">
+                        <input type="text" id="fname" class="form-input" name="customer[first_name]"
+                            aria-label="First name" placeholder="First name" autofocus="" spellcheck="false"
+                            data-ms-editor="true">
+                        <label class="form-input-lable">First name</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="text" id="lname" class="form-input" name="customer[last_name]"
+                            aria-label="Last name" placeholder="Last name" spellcheck="false" data-ms-editor="true">
+                        <label class="form-input-lable">Last name</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="email" id="email" class="form-input" name="customer[email]" aria-label="Email"
+                            placeholder="Email" required="required">
+                        <label class="form-input-lable">Email</label>
+                    </div>
+
+                    <div class="form-imput-div">
+                        <input type="password" id="password" class="form-input" name="customer[password]"
+                            aria-label="Password" placeholder="Password" required="required" aria-autocomplete="list">
+                        <label class="form-input-lable">Password</label>
+                    </div>
+
+                    <button type="submit" class="sign-btn">Create my account</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
+<script type="module">
+    document.querySelector(".sign-btn").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+    function signUp(e) {
+        e.preventDefault()
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+        var user = document.getElementById("fname").value + document.getElementById("lname").value;
+
+
+        var userCredentials = {
+            email: email,
+            passWord: pass,
+            userName: user,
+
+        };
+        userArr.push(userCredentials);
+        localStorage.setItem("userData", JSON.stringify(userArr));
+
+        window.location.href = "index.html";
+    }
+</script>
+<script type="module">
+    import { navbar, footer } from "./components/navbar.js";
+    let header = document.querySelector("header");
+    let footerhtml = document.querySelector("footer");
+    header.innerHTML = navbar();
+    footerhtml.innerHTML = footer();
+
+    // updating cart items value in navbar
+    let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length;
+    console.log(cartitemsNo);
+    let cartLengthShow = document.querySelector(".dropdown+li>p>b");
+    console.log(cartLengthShow)
+    cartLengthShow.innerText = `Cart (${cartitemsNo})`;
+</script>
