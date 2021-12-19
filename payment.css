@@ -235,11 +235,9 @@
 }
 #shippingInfo {
   width: 95%;
-  margin: auto;
-  text-overflow: wrap;
+  line-height: 1;
 }
 #shippingInfo > * {
-  line-height: 1px;
   margin: 15px;
 }
 #orderPlaced > h5 {
