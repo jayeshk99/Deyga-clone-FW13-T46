@@ -17,7 +17,7 @@
 ---
 ## Our Team Members ❤️
 - **[Jayesh Khairnar](https://github.com/jayeshk99)**
-- **[Atul Kharwalal](https://github.com/iamkharwal)**
+- **[Atul Kharwal](https://github.com/iamkharwal)**
 - **[Anshul Sharma](https://github.com/anshul160196)**
 - **[Neeraj Shukla](https://github.com/NeerajShUkL)**
 - **[Yogesh kumawat](https://github.com/saurabh0413)**
