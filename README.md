@@ -40,7 +40,7 @@
 
 ### How To Use ✅
 
-First you have to have to go to the `Home Page`. There you have to click on account to get a pop window where there is sign-up using mobile number. You'll get an OTP enter that OTP for validation and you'll be logged in. There you can explore the home page or go to the women's section to browse products. The products can be sorted according to color,  category & discount. Click on any product to go to its product page there you can add it bag by clicking on the add to bag button. You can add multiple items to the cart. Then click on cart to view the cart which is a pop-up slider. There coupouns can applied or items can be deleted. To proceed to checkout click on `Proceed to Buy` button on the top of cart which will redirect you to address page where address details can be added. After clicking on proceed to buy we get redirected to `Payment` page where card details can be added and buying process can be completed.
+First you will go to the `Home Page`. There you have to click on account to get a  sign-up page you have to signup using email then you will go to the login page there you have to login with email and pass. There you can explore the home page or go to the any product category. The products can be sorted according to name & price. Click on any product to go to its product page there you can add it in cart by clicking on the add to cart button. You can add multiple items to the cart. Then click on cart to view the cart which is a pop-up slider. There coupouns can applied or items can be deleted. To proceed to checkout click on `Proceed to Buy` button on the top of cart which will redirect you to address page where address details can be added. After clicking on proceed to buy we get redirected to `Payment` page where card details can be added and buying process can be completed.
 
 ---
 
@@ -58,7 +58,8 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 - **Home Page**
 ---
 ![degya home nav](https://user-images.githubusercontent.com/93372413/146666886-20776cab-b20e-4eb0-93d0-c98ef9e5375a.png)
-![full home page sc](https://user-images.githubusercontent.com/93372413/146667375-e66affa7-7258-4012-bab8-f97defb0f62b.png)
+![image (1)](https://user-images.githubusercontent.com/93372413/146673457-c36c6d83-678b-45ef-bac5-d215d7b482fa.png)
+
 ---
 
 - **Sign-Up Page** 
