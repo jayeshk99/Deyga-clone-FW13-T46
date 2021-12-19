@@ -1211,13 +1211,14 @@ cartBtn.addEventListener("click", () => {
     appendCart();
     document.getElementById("cart").style.marginLeft = "0%";
     disableBodyScroll();
-
+    document.querySelector("body").style.overflowY = "hidden";
 })
 
 let cartCloseBtn = document.querySelector(".cartClose");
 cartCloseBtn.addEventListener("click", () => {
     document.getElementById("cart").style.marginLeft = "100%"
-    enableBodyScroll()
+    enableBodyScroll();
+    document.querySelector("body").style.overflowY = "scroll";
 })
 
 let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
