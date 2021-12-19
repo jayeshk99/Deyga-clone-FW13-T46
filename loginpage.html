@@ -91,24 +91,29 @@
             window.location.href = "admin.html"
             alert("login successful");
         } else {
+            let found = false;
             for (var i = 0; i < regdUsers.length; i++) {
                 if (
                     regdUsers[i].email == email &&
                     regdUsers[i].passWord == pass
                 ) {
                     let userData = {
-                        username :   regdUsers[i].userName,
-                        email :   regdUsers[i].email,
-                        passWord :   regdUsers[i].passWord,
+                        username: regdUsers[i].userName,
+                        email: regdUsers[i].email,
+                        passWord: regdUsers[i].passWord,
                     }
-                    let currentUser = localStorage.setItem("loginUser",JSON.stringify(userData))
+                    let currentUser = localStorage.setItem("loginUser", JSON.stringify(userData))
                     alert("login successful");
+                    found = true;
                     window.location.href = "index.html";
-                   break;
-                }      alert("Wrong email or password")
+
+                    break;
+                }
             }
-              
-                 
+            if (!found) {
+                alert("Wrong Credentials");
+            }
+
         }
 
     }
@@ -121,25 +126,25 @@
     footerhtml.innerHTML = footer();
 
 
-let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
-console.log(currUser )
-if(currUser != 0){
-  document.getElementById("User").textContent = currUser["username"];
-  document.getElementById("logoutUser").style.display = "none";
-  document.getElementById("loginUser").style.display = "block";
-}else{
-  document.getElementById("User").textContent = "Account";
-  document.getElementById("logoutUser").style.display = "block";
-  document.getElementById("loginUser").style.display = "none";
-}
+    let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
+    console.log(currUser)
+    if (currUser != 0) {
+        document.getElementById("User").textContent = currUser["username"];
+        document.getElementById("logoutUser").style.display = "none";
+        document.getElementById("loginUser").style.display = "block";
+    } else {
+        document.getElementById("User").textContent = "Account";
+        document.getElementById("logoutUser").style.display = "block";
+        document.getElementById("loginUser").style.display = "none";
+    }
 
-document.getElementById("logout").addEventListener("click",function(){
-    currUser = 0;
-    document.getElementById("User").textContent = "Account";
-    document.getElementById("logoutUser").style.display = "block";
-    document.getElementById("loginUser").style.display = "none";
-    localStorage.setItem("loginUser",JSON.stringify(currUser));
-    window.location.href = "loginpage.html";
-})
+    document.getElementById("logout").addEventListener("click", function () {
+        currUser = 0;
+        document.getElementById("User").textContent = "Account";
+        document.getElementById("logoutUser").style.display = "block";
+        document.getElementById("loginUser").style.display = "none";
+        localStorage.setItem("loginUser", JSON.stringify(currUser));
+        window.location.href = "loginpage.html";
+    })
 
 </script>
