@@ -39,10 +39,10 @@
     }
     .header-center-div{
     text-align: center;
-    width: 40%;
+    width: 30%;
     }
     .header-left-div, .header-right-div{
-    width: 30%;
+    width: 35%;
     }
     .header-lists ul{
     display: flex;
@@ -86,21 +86,28 @@
       .mb-account div{
       width: 50%;
       }
-    #submenu ul{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    gap: 13px;
-    }
+      #submenu ul{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        gap: 13px;
+        padding: 0px;
+        padding-left: 10px;
+        width: 70%;
+        }
     #submenu ul li{
     margin: 0px 5px;
     cursor: pointer;
     }
 
+   
     #header-help-img{
-    padding-left: 10px;
-    width: 34%;
-    }
+      padding-left: 10px;
+      width: 90%;
+      }
+      #header-right-img{
+        width: 30%;
+      }
     #submenu{
     display: flex;
     justify-content: center;
