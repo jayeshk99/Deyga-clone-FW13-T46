@@ -1305,11 +1305,9 @@
   onscroll();
 
   // updating cart items value in navbar
-  // let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length || 0;
-  let cartitemsNo = 0;
-  console.log(cartitemsNo);
+  let cartitemsNo = JSON.parse(localStorage.getItem("cartData")).length || 0;
+  // let cartitemsNo = 0;
   let cartLengthShow = document.querySelector(".dropdown+li>p>b");
-  console.log(cartLengthShow);
   cartLengthShow.innerText = `Cart (${cartitemsNo})`;
 
   // ----------- disabling and enabling body scroll ----------
@@ -1326,33 +1324,33 @@
   // -------------for cart---------------------
   let cartBtn = document.querySelector("#submenu>ul>li:nth-child(2)");
   cartBtn.addEventListener("click", () => {
-    console.log("hello");
     document.getElementById("cart").style.display = "block";
     window.scrollTo(0, 0);
     appendCart();
     document.getElementById("cart").style.marginLeft = "0%";
     disableBodyScroll();
-  });
+    document.querySelector("body").style.overflowY = "hidden";
+})
 
-  let cartCloseBtn = document.querySelector(".cartClose");
-  cartCloseBtn.addEventListener("click", () => {
-    document.getElementById("cart").style.marginLeft = "100%";
+let cartCloseBtn = document.querySelector(".cartClose");
+cartCloseBtn.addEventListener("click", () => {
+    document.getElementById("cart").style.marginLeft = "100%"
     enableBodyScroll();
-  });
+    document.querySelector("body").style.overflowY = "scroll";
+})
 
-  let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
-  console.log(currUser, "hello");
-  if (currUser != 0) {
-    document.getElementById("User").textContent = currUser["username"];
-    document.getElementById("logoutUser").style.display = "none";
-    document.getElementById("loginUser").style.display = "block";
-  } else {
-    document.getElementById("User").textContent = "Account";
-    document.getElementById("logoutUser").style.display = "block";
-    document.getElementById("loginUser").style.display = "none";
-  }
+let currUser = JSON.parse(localStorage.getItem("loginUser")) || 0;
+if(currUser != 0){
+  document.getElementById("User").textContent = currUser["username"];
+  document.getElementById("logoutUser").style.display = "none";
+  document.getElementById("loginUser").style.display = "block";
+}else{
+  document.getElementById("User").textContent = "Account";
+  document.getElementById("logoutUser").style.display = "block";
+  document.getElementById("loginUser").style.display = "none";
+}
 
-  document.getElementById("logout").addEventListener("click", function () {
+document.getElementById("logout").addEventListener("click",function(){
     currUser = 0;
     document.getElementById("User").textContent = "Account";
     document.getElementById("logoutUser").style.display = "block";
@@ -1534,7 +1532,6 @@
       document.getElementById("prevwatch").style.opacity = 0;
       document.getElementById("prevwatch").style.display = "hidden";
     }
-    console.log(size);
     function prevwatchSlide() {
       if (count == 2) {
         document.getElementById("prevwatch").style.opacity = 0;
@@ -1576,7 +1573,6 @@
   let page = (name) => {
     var pageName = localStorage.getItem("pageName") || "";
     localStorage.setItem("pageName", name);
-    console.log(name);
   };
   responsivewatchSlider();
 </script>
