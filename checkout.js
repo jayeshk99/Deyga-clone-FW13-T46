@@ -59,7 +59,6 @@ couponBtn.addEventListener("click", () => {
             alert("30% off applied");
             couponFlag = true;
 
-
             paymentDetail.discount = discountValue;
             paymentDetail.grandTotal = grandTotal;
             
