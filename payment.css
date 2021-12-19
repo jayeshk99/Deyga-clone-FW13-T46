@@ -1,6 +1,10 @@
 /* address nav */
-body {
-  font-family: "Montserrat", sans-serif;
+@font-face {
+  font-family: 'Cartner Sans W01';
+  src: url('/font/carter-sans-w01.ttf') format('truetype')
+  }
+  body{
+  font-family: "Cartner Sans W01" ;
   font-size: 14px;
   line-height: 1.42857;
   color: rgb(51, 51, 51);
@@ -231,11 +235,9 @@ body {
 }
 #shippingInfo {
   width: 95%;
-  margin: auto;
-  text-overflow: wrap;
+  line-height: 1;
 }
 #shippingInfo > * {
-  line-height: 1px;
   margin: 15px;
 }
 #orderPlaced > h5 {

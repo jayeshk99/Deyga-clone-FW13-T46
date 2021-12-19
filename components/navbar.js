@@ -62,9 +62,10 @@ let navbar = () => {
                         <p><b>Cart(0)</b> </p>
                     </li>
                 </ul>
+                <div id="header-right-img">
                 <img id="header-help-img"
                     src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/HELP_ME_CHOOSE-06_1.png?214"
-                    alt="">
+                    alt=""></div>
             </div>
             </div>
             </div>
