@@ -10,11 +10,6 @@
 > This is a team project, built by us in the Construct Week - Unit 3 at Masai School.
 
 ---
-
-#### Presentation & Demo Video:
-- **[Checkout The Demo Video On Youtube](https://youtu.be/qARrJSibPH8)**
-
----
 ## Our Team Members ❤️
 - **[Jayesh Khairnar](https://github.com/jayeshk99)**
 - **[Atul Kharwal](https://github.com/iamkharwal)**
