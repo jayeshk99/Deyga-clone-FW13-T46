@@ -45,7 +45,7 @@ couponBtn.addEventListener("click", () => {
     if (couponFlag) {
       alert("Coupon Already Applied");
     } else {
-      let discountValue = paymentDetail.subTotal * 0.3;
+      let discountValue = Math.floor(paymentDetail.subTotal * 0.3);
       console.log("dis", discountValue);
       let grandTotal =
         paymentDetail.subTotal + paymentDetail.shippingCharges - discountValue;
