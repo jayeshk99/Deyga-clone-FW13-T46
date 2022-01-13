@@ -184,6 +184,7 @@ for (let k = 0; k < camelArr.length; k++) {
         break;
     }
 }
+console.log(productData);
 appendData(productData);
 
 
