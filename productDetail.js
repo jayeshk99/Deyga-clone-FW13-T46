@@ -2,9 +2,9 @@ let productDetailData = JSON.parse(localStorage.getItem("clickedProduct"));
 let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 // ----------Import functions-------
-import { navbar, footer } from "/components/navbar.js";
-import { cartComp } from "/components/cart.js";
-import { appendCart } from "/scripts/cart.js";
+import { navbar, footer } from "./components/navbar.js";
+import { cartComp } from "./components/cart.js";
+import { appendCart } from "./scripts/cart.js";
 
 let headerPart = document.getElementById("navbar");
 headerPart.innerHTML = navbar();
