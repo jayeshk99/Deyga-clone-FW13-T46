@@ -5,7 +5,7 @@
 import { navbar, footer } from "./components/navbar.js";
 import { appendCart } from "./scripts/cart.js";
 import { cartComp } from "./components/cart.js";
-import { setDataToLocal } from "/scripts/data.js";
+import { setDataToLocal } from "./scripts/data.js";
 
 let navComp = navbar();
 let footerComp = footer();
