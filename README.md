@@ -1,6 +1,6 @@
 ---
 # Deyga Front-End Project
-This is a front end clone an E-commerce website where user can buy cosmetics. Built using HTML, CSS, JavaScript.
+**This is a front end clone an E-commerce website where user can buy cosmetics. Built using HTML, CSS, JavaScript.**
 
 ---
 
