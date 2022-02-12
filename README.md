@@ -15,7 +15,7 @@
 - **[Atul Kharwal](https://github.com/iamkharwal)**
 - **[Anshul Sharma](https://github.com/anshul160196)**
 - **[Neeraj Shukla](https://github.com/NeerajShUkL)**
-- **[Yogesh kumawat](https://github.com/saurabh0413)**
+- **[Yogesh kumawat](https://github.com/yogeshkumawat007)**
 
 ---
 
