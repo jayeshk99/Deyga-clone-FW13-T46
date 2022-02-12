@@ -1,5 +1,7 @@
 ---
 # Deyga Front-End Project
+This is a front end clone an E-commerce website where user can buy cosmetics. Built using HTML, CSS, JavaScript.
+
 ---
 
 # Welcome 👋
@@ -7,7 +9,7 @@
 
 
 ## About this project: 🙌
-> This is a team project, built by us in the Construct Week - Unit 3 at Masai School.
+>
 
 ---
 ## Our Team Members ❤️
